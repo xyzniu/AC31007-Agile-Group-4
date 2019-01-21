@@ -1,4 +1,4 @@
-<%@ page import="uk.ac.dundee.pojo.User" %>
+<%@ page import="uk.ac.dundee.group4.pojo.User" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: chenjingkun
