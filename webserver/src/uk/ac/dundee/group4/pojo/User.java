@@ -1,4 +1,4 @@
-package uk.ac.dundee.pojo;
+package uk.ac.dundee.group4.pojo;
 
 public class User {
 

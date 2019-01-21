@@ -5,7 +5,15 @@
          version="4.0">
     <servlet>
         <servlet-name>UserServlet</servlet-name>
-        <servlet-class>uk.ac.dundee.servlet.UserServlet</servlet-class>
+        <servlet-class>uk.ac.dundee.group4.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.Servlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet2</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.Servlet2</servlet-class>
     </servlet>
 
     <servlet-mapping>

@@ -1,7 +1,7 @@
-package uk.ac.dundee.service;
+package uk.ac.dundee.group4.service;
 
-import uk.ac.dundee.dao.UserDao;
-import uk.ac.dundee.pojo.User;
+import uk.ac.dundee.group4.dao.UserDao;
+import uk.ac.dundee.group4.pojo.User;
 
 import java.util.List;
 

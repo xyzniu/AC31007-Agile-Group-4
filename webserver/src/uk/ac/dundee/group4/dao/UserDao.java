@@ -1,6 +1,6 @@
-package uk.ac.dundee.dao;
+package uk.ac.dundee.group4.dao;
 
-import uk.ac.dundee.pojo.User;
+import uk.ac.dundee.group4.pojo.User;
 
 import java.sql.*;
 import java.util.ArrayList;
