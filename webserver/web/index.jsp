@@ -12,5 +12,6 @@
   </head>
   <body>
   <a href="UserServlet"> go to user servlet</a>
+  <a href="CommentServlet"> go to Comment servlet</a>
   </body>
 </html>
