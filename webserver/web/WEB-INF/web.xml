@@ -40,5 +40,13 @@
         <servlet-class>uk.ac.dundee.group4.servlet.DeleteCommentServlet</servlet-class>
     </servlet>
 
+    <servlet-mapping>
+        <servlet-name>UpdateCommentServlet</servlet-name>
+        <url-pattern>/UpdateCommentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateCommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.UpdateCommentServlet</servlet-class>
+    </servlet>
 
 </web-app>

@@ -15,5 +15,6 @@
   <a href="CommentServlet"> go to Comment servlet</a>
   <a href="InsertCommentServlet"> go to Insert Comment servlet</a>
   <a href="DeleteCommentServlet"> go to Delete Comment servlet</a>
+  <a href="UpdateCommentServlet"> go to Update Comment servlet</a>
   </body>
 </html>
