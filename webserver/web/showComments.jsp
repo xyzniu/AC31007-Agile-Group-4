@@ -15,11 +15,11 @@
 <body>
 <p>
     <%
-        List<Comment> comment = (List<Comment>) request.getAttribute("comments");
+        List<Comment> comment = (List<Comment>) request.getAttribute("comments_list");
         for(Comment c : comment){
     %>
-        <%= c.getComment_id()%>
-        <%= c.getComments()%>
+    <%= c.getComment_id()%>
+    <%= c.getComments()%>
     <%
         }
     %>

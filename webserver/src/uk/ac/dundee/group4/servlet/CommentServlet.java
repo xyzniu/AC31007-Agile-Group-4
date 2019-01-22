@@ -24,7 +24,10 @@ public class CommentServlet extends HttpServlet {
         //commentList.add(new Comment(1111, "1111"));
         //commentList.add(new Comment(2222, "2222"));
 
-        request.setAttribute("comments", commentService.selectAll());
+        request.setAttribute("comments_list", commentService.selectAll());
+        System.out.println(commentService.selectAll()
+        );
+
         request.getRequestDispatcher("showComments.jsp").forward(request, response);
     }
 }

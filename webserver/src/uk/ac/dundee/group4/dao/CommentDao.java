@@ -23,8 +23,9 @@ public class CommentDao {
                 while (rs.next()){
                     Comment c = new Comment();
                     c.setComment_id(rs.getInt(1));
-                    c.setComments(rs.getString(3));
+                    c.setComments(rs.getString(2));
                     comments.add(c);
+                    System.out.print("c:"+c);
                 }
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
