@@ -36,5 +36,9 @@ public class Comment {
     public String getComments() {
         return comments;
     }
+    public String getCommentsbyId(int comment_id) {
+
+        return comments;
+    }
 
 }

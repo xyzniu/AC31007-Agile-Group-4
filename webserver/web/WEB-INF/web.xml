@@ -17,9 +17,28 @@
         <servlet-name>CommentServlet</servlet-name>
         <servlet-class>uk.ac.dundee.group4.servlet.CommentServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>CommentServlet</servlet-name>
         <url-pattern>/CommentServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>InsertCommentServlet</servlet-name>
+        <url-pattern>/InsertCommentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InsertCommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.InsertCommentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteCommentServlet</servlet-name>
+        <url-pattern>/DeleteCommentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteCommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.DeleteCommentServlet</servlet-class>
+    </servlet>
+
+
 </web-app>
