@@ -1,41 +1,48 @@
 package uk.ac.dundee.group4.dao;
 
-import uk.ac.dundee.group4.pojo.Comment;
+import uk.ac.dundee.group4.pojo.SelectComment;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommentDao {
+public class SelectCommentDao {
 
-        public List<Comment> selectAll(){
+    public List<SelectComment> SelectComment(String comment_id) {
         Connection conn = null;
         PreparedStatement ps = null;
+        String sql = null;
         ResultSet rs = null;
-        List<Comment> comments  = new ArrayList<>();
+        List<SelectComment> comments = new ArrayList<>();
 
-        try{
+
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db","18agileteam4","7632.at4.2367");
-            String sql = "SELECT * FROM comments";
+            conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db", "18agileteam4", "7632.at4.2367");
+            //String sql = "INSERT INTO comments(comment_id, comment) VALUES ("+comment_id+","+comment+")";
+            if (comment_id == "allthecomment") {
+
+                sql = "Select * from comments";
+            } else {
+                sql = "Select * from comments where comment_id = " + comment_id;
+
+            }
+            System.out.println(sql);
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
-            while (rs.next()){
-                Comment c = new Comment();
-                c.setComment_id(rs.getInt(1));
+            while (rs.next()) {
+                SelectComment c = new SelectComment();
+                c.setComment_id(rs.getString(1));
                 c.setComments(rs.getString(2));
                 comments.add(c);
             }
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                rs.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+
             try {
                 ps.close();
             } catch (SQLException e) {
@@ -49,5 +56,6 @@ public class CommentDao {
         }
         return comments;
     }
-
 }
+
+

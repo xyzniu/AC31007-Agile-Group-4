@@ -1,7 +1,7 @@
 package uk.ac.dundee.group4.servlet;
 
 
-import uk.ac.dundee.group4.service.InsertCommentService;
+import uk.ac.dundee.group4.service.SelectCommentService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,17 +11,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "InsertCommentServlet", value = "InsertCommentServlet")
-public class InsertCommentServlet extends HttpServlet {
-    InsertCommentService insertCommentService = new InsertCommentService();
+public class SelectCommentServlet extends HttpServlet {
+    SelectCommentService selectCommentService = new SelectCommentService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String comment_id = request.getParameter("comment_id");
-        String comment = request.getParameter("comment");
         System.out.println("post");
         System.out.println(comment_id);
-        System.out.println(comment);
-        insertCommentService.insertComment(comment_id,comment);
-        request.getRequestDispatcher("insertComment.jsp").forward(request, response);
+        request.setAttribute("comments_list", selectCommentService.selectComment(comment_id));
+        request.getRequestDispatcher("showComments.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

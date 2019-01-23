@@ -14,7 +14,7 @@ public class InsertCommentDao {
                 Class.forName("com.mysql.jdbc.Driver");
                 conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db","18agileteam4","7632.at4.2367");
                 //String sql = "INSERT INTO comments(comment_id, comment) VALUES ("+comment_id+","+comment+")";
-                String sql = "INSERT INTO comments (comment_id, comment,user_ID,exam_paper_id) value ("+comment_id+","+comment+",1,1)";
+                String sql = "insert INTO comments (comment_id, comment,user_ID,exam_paper_id) value ("+comment_id+","+comment+",1,1)";
                 System.out.println(sql);
                 ps = conn.prepareStatement(sql);
                 ps.execute();

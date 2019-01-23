@@ -17,20 +17,15 @@ public class UpdateCommentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String comment_id = request.getParameter("comment_id");
         String comment = request.getParameter("comment");
-
-        updateCommentService.updateComment(comment_id,comment);
-        //request.getRequestDispatcher("insertComments.jsp").forward(request, response);
-    }
-
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String comment_id = request.getParameter("comment_id");
-        String comment = request.getParameter("comment");
-
+        System.out.println("post");
         System.out.println(comment_id);
         System.out.println(comment);
         updateCommentService.updateComment(comment_id,comment);
-
         request.getRequestDispatcher("updateComment.jsp").forward(request, response);
+    }
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
     }
 
 }

@@ -18,7 +18,6 @@ public class CommentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String comment_id = request.getParameter("comment_id");
         String comment = request.getParameter("comment");
-        commentService.insertComment(comment_id,comment);
         //request.getRequestDispatcher("insertComments.jsp").forward(request, response);
     }
 

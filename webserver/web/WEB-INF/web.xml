@@ -49,4 +49,13 @@
         <servlet-class>uk.ac.dundee.group4.servlet.UpdateCommentServlet</servlet-class>
     </servlet>
 
+    <servlet-mapping>
+        <servlet-name>SelectCommentServlet</servlet-name>
+        <url-pattern>/SelectCommentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SelectCommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.SelectCommentServlet</servlet-class>
+    </servlet>
+
 </web-app>

@@ -1,4 +1,3 @@
-<%@ page import="uk.ac.dundee.group4.pojo.User" %>
 <%@ page import="java.util.List" %>
 <%@ page import="uk.ac.dundee.group4.pojo.Comment" %><%--
   Created by IntelliJ IDEA.
@@ -17,11 +16,15 @@
     <title>insertComment</title>
 </head>
 <body>
-<h1>Please in put the comment_id to delete</h1>
-<ul>
-    <li><p><b>comment_id:</b>
-        <%= request.getParameter("comment_id")%>
-    </p></li>
-</ul>
+<h1>Please in put the comment_id </h1>
+
+<form   method="post" action="DeleteCommentServlet">
+    comment_id: <input type="text" name="comment_id">
+    <br />
+    <input type="submit" value="submit" />
+    <span class="error">${error}</span>
+</form>
+
+</body>
 </body>
 </html>

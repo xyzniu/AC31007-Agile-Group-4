@@ -1,6 +1,5 @@
-<%@ page import="uk.ac.dundee.group4.pojo.User" %>
 <%@ page import="java.util.List" %>
-<%@ page import="uk.ac.dundee.group4.pojo.Comment" %><%--
+<%@ page import="uk.ac.dundee.group4.pojo.SelectComment" %><%--
   Created by IntelliJ IDEA.
   User: chenjingkun
   Date: 2019/1/22
@@ -10,13 +9,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Show all the comments</title>
 </head>
 <body>
 <p>
     <%
-        List<Comment> comment = (List<Comment>) request.getAttribute("comments_list");
-        for(Comment c : comment){
+        List<SelectComment> selectcomment = (List<SelectComment>) request.getAttribute("comments_list");
+        for(SelectComment c : selectcomment){
     %>
     <%= c.getComment_id()%>
     <%= c.getComments()%>
@@ -25,5 +24,7 @@
     %>
 
 </p>
+
 </body>
 </html>
+

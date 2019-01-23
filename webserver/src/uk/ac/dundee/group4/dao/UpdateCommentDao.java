@@ -16,7 +16,7 @@ public class UpdateCommentDao {
                 Class.forName("com.mysql.jdbc.Driver");
                 conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db","18agileteam4","7632.at4.2367");
                 //String sql = "INSERT INTO comments(comment_id, comment) VALUES ("+comment_id+","+comment+")";
-                String sql = "UPDATE comments SET comment ="+comment+" WHERE comment_id =  "+comment_id;
+                String sql = "update comments SET comment ="+comment+" WHERE comment_id =  "+comment_id;
                 System.out.println(sql);
                 ps = conn.prepareStatement(sql);
                 ps.execute();
