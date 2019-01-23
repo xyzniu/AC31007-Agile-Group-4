@@ -10,8 +10,12 @@ public class ExamPaperService {
 
     ExamPaperDao dao = new ExamPaperDao();
 
-    public List<ExamPaper> selectByExamSetter(int examSetterId) {
-        return dao.selectAll(examSetterId);
+    public List<ExamPaper> selectByExamSetter(int examSetterId, String staffName) {
+        List<ExamPaper> examPapers = dao.selectByExamSetter(examSetterId);
+        for (ExamPaper paper : examPapers) {
+            paper.setExamSetter(staffName);
+        }
+        return examPapers;
     }
 
     public int insertExamPaper(ExamPaper examPaper) {
@@ -19,7 +23,16 @@ public class ExamPaperService {
         return rst;
     }
 
-    public int insertOneVersion(Version version) {
-        return -1;
+    public Version selectUrlByModuleCodeAndLevel(String moduleCode, int level) {
+        return dao.selectByExamPaperId(moduleCode, level);
+    }
+
+    public List<ExamPaper> selectAll() {
+        return dao.selectAll();
+    }
+
+    public List<ExamPaper> selectByStaffID(int id, int type) {
+        return dao.selectByStaffID(id, type);
+
     }
 }

@@ -82,6 +82,7 @@ public class AddExamPaperServlet extends HttpServlet {
 
         int success = versionService.insertOne(v);
         if (success > 0) {
+            examPaper.setLatestVersion(success);
             examPaperService.insertExamPaper(examPaper);
             request.getRequestDispatcher("ListExamPaperServlet").forward(request, response);
         } else {

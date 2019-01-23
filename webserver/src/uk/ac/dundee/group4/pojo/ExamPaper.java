@@ -13,6 +13,8 @@ public class ExamPaper {
     private int level;
     private int latestVersion;
     private Timestamp timestamp;
+    private String examSetter;
+    private int stage;
 
     public ExamPaper() {
     }
@@ -28,6 +30,7 @@ public class ExamPaper {
         this.timestamp = timestamp;
     }
 
+
     @Override
     public String toString() {
         return "ExamPaper{" +
@@ -39,6 +42,8 @@ public class ExamPaper {
                 ", level=" + level +
                 ", latestVersion=" + latestVersion +
                 ", timestamp=" + timestamp +
+                ", examSetter='" + examSetter + '\'' +
+                ", stage=" + stage +
                 '}';
     }
 
@@ -124,6 +129,22 @@ public class ExamPaper {
 
     public void setTimestamp(Timestamp timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getExamSetter() {
+        return examSetter;
+    }
+
+    public void setExamSetter(String examSetter) {
+        this.examSetter = examSetter;
+    }
+
+    public int getStage() {
+        return stage;
+    }
+
+    public void setStage(int stage) {
+        this.stage = stage;
     }
 }
 

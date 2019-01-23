@@ -9,6 +9,7 @@ public class VersionService {
 
     public int insertOne(Version version) {
         int rst = versionDao.insertOne(version);
+
         return rst;
     }
 

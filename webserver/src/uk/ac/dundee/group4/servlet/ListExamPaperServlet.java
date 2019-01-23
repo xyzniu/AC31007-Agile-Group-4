@@ -3,6 +3,7 @@ package uk.ac.dundee.group4.servlet;
 import uk.ac.dundee.group4.pojo.ExamPaper;
 import uk.ac.dundee.group4.pojo.User;
 import uk.ac.dundee.group4.service.ExamPaperService;
+import uk.ac.dundee.group4.util.Category;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,21 +13,39 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * List exam papers.
+ */
 public class ListExamPaperServlet extends HttpServlet {
     ExamPaperService examPaperService = new ExamPaperService();
 
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request,response);
+        doGet(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        User u = new User();
-        u.setId(1);
         HttpSession session = request.getSession();
-        session.setAttribute("user", u);
-        List<ExamPaper> examPapers = examPaperService.selectByExamSetter(u.getId());
+        User u = (User) session.getAttribute("user");
+        List<ExamPaper> examPapers = null;
+        switch (u.getStaffType()) {
+            case Category.EXAM_SETTER:
+                examPapers = examPaperService.selectByExamSetter(u.getId(), u.getFirstName() + " " + u.getLastName());
+                break;
+            case Category.INTERNAL_MODERATOR:
+                examPapers = examPaperService.selectByStaffID(u.getId(), Category.LINK_INTERNAL_MODERATOR);
+                break;
+            case Category.EXAM_VETTING_COMMITTEE:
+                examPapers = examPaperService.selectByStaffID(u.getId(), Category.LINK_EXAM_VETTING_COMMITTEE);
+                break;
+            case Category.EXTERNAL_EXAMINER:
+                examPapers = examPaperService.selectByStaffID(u.getId(), Category.LINK_EXTERNAL_EXAMINER);
+                break;
+            case Category.SCHOOL_OFFICE:
+                examPapers = examPaperService.selectAll();
+                break;
+
+        }
         request.setAttribute("examPapers", examPapers);
-        request.getRequestDispatcher("/listAllExamSetter.jsp").forward(request, response);
+        request.getRequestDispatcher("/listAllExamPapers.jsp").forward(request, response);
     }
 }
