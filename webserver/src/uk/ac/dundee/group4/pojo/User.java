@@ -2,6 +2,9 @@ package uk.ac.dundee.group4.pojo;
 
 import java.util.Objects;
 
+/**
+ * Encapsulation for user
+ */
 public class User {
 
     private int id;

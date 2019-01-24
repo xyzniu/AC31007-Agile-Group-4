@@ -1,5 +1,8 @@
 package uk.ac.dundee.group4.pojo;
 
+/**
+ * Comment
+ */
 public class Comment {
 
     private int comment_id;

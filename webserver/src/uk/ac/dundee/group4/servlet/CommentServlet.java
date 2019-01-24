@@ -12,19 +12,25 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "CommentServlet", value = "CommentServlet")
+/**
+ * This is a Servlet dealing with comments
+ */
 public class CommentServlet extends HttpServlet {
     CommentService commentService = new CommentService();
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String comment_id = request.getParameter("comment_id");
-        String comment = request.getParameter("comment");
-        //request.getRequestDispatcher("insertComments.jsp").forward(request, response);
+
     }
 
+    /**
+     * show comments
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         request.setAttribute("comments_list", commentService.selectAll());
-        System.out.println(commentService.selectAll());
         request.getRequestDispatcher("showComments.jsp").forward(request, response);
     }
 

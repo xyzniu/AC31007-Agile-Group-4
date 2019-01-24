@@ -3,6 +3,9 @@ package uk.ac.dundee.group4.pojo;
 import java.sql.Timestamp;
 import java.util.Objects;
 
+/**
+ * Encapsulation for Version
+ */
 public class Version {
 
     private int id;

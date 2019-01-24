@@ -5,8 +5,17 @@ import uk.ac.dundee.group4.util.DBInfo;
 
 import java.sql.*;
 
+/**
+ * This is a Dao for version
+ */
 public class VersionDao {
 
+    /**
+     * insert one version
+     *
+     * @param version
+     * @return
+     */
     public int insertOne(Version version) {
         Connection connection = null;
         PreparedStatement ps = null;
@@ -51,9 +60,17 @@ public class VersionDao {
             }
         }
 
+        // return -1 if operation failed
+        // return version key if operation success
         return rst;
     }
 
+    /**
+     * update exampaper id in version table
+     * @param versionId
+     * @param examPaperId
+     * @return
+     */
     public int updateExamPaperId(int versionId, int examPaperId) {
         Connection connection = null;
         PreparedStatement ps = null;

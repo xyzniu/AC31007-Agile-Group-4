@@ -3,16 +3,23 @@ package uk.ac.dundee.group4.pojo;
 import java.sql.Timestamp;
 import java.util.Objects;
 
+/**
+ * Exam Paper
+ */
 public class ExamPaper {
 
     private int id;
     private String moduleCode;
     private int examSetterId;
+    // online or offline
     private int format;
+    // main or resit
     private int type;
+    // undergraduate or postgraduate
     private int level;
     private int latestVersion;
     private Timestamp timestamp;
+    // exam setter name
     private String examSetter;
     private int stage;
 

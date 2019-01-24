@@ -6,8 +6,18 @@ import uk.ac.dundee.group4.util.DBInfo;
 
 import java.sql.*;
 
+/**
+ * This is a Dao for user
+ */
 public class UserDao {
 
+    /**
+     * querying user by username password and staff type
+     * @param username
+     * @param password
+     * @param type
+     * @return
+     */
     public User selectByUsernamePasswordAndType(String username, String password, String type) {
         Connection connection = null;
         PreparedStatement ps = null;

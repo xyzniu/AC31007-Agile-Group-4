@@ -6,21 +6,28 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is a Dao for comments
+ */
 public class CommentDao {
 
-        public List<Comment> selectAll(){
+    /**
+     * Querying all comments
+     * @return
+     */
+    public List<Comment> selectAll() {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        List<Comment> comments  = new ArrayList<>();
+        List<Comment> comments = new ArrayList<>();
 
-        try{
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db","18agileteam4","7632.at4.2367");
+            conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db", "18agileteam4", "7632.at4.2367");
             String sql = "SELECT * FROM comments";
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
-            while (rs.next()){
+            while (rs.next()) {
                 Comment c = new Comment();
                 c.setComment_id(rs.getInt(1));
                 c.setComments(rs.getString(2));

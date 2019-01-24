@@ -6,10 +6,20 @@ import uk.ac.dundee.group4.pojo.Version;
 
 import java.util.List;
 
+/**
+ * This is a Service dealing with exam paper.
+ */
 public class ExamPaperService {
 
     ExamPaperDao dao = new ExamPaperDao();
 
+    /**
+     * querying exam papers by exam setter id
+     *
+     * @param examSetterId
+     * @param staffName
+     * @return
+     */
     public List<ExamPaper> selectByExamSetter(int examSetterId, String staffName) {
         List<ExamPaper> examPapers = dao.selectByExamSetter(examSetterId);
         for (ExamPaper paper : examPapers) {
@@ -18,19 +28,43 @@ public class ExamPaperService {
         return examPapers;
     }
 
+    /**
+     * insert exam paper
+     *
+     * @param examPaper
+     * @return
+     */
     public int insertExamPaper(ExamPaper examPaper) {
         int rst = dao.insertOne(examPaper);
         return rst;
     }
 
+    /**
+     * querying url by exam paper id
+     *
+     * @param examPaperId
+     * @return
+     */
     public Version selectUrlExamPaperId(int examPaperId) {
         return dao.selectByExamPaperId(examPaperId);
     }
 
+    /**
+     * querying all exam papers
+     *
+     * @return
+     */
     public List<ExamPaper> selectAll() {
         return dao.selectAll();
     }
 
+    /**
+     * querying exam papers by staff id and staff type
+     *
+     * @param id
+     * @param type
+     * @return
+     */
     public List<ExamPaper> selectByStaffID(int id, int type) {
         return dao.selectByStaffID(id, type);
 

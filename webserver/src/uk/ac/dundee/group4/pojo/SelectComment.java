@@ -1,5 +1,8 @@
 package uk.ac.dundee.group4.pojo;
 
+/**
+ * Encapsulation for selecting comments
+ */
 public class SelectComment {
 
     private String comment_id;

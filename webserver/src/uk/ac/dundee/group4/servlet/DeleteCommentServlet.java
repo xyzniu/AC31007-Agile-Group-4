@@ -10,16 +10,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "DeleteCommentServlet", value = "DeleteCommentServlet")
+/**
+ * This is a Servlet dealing with deleting comments
+ */
 public class DeleteCommentServlet extends HttpServlet {
     DeleteCommentService deleteCommentService = new DeleteCommentService();
 
+    /**
+     * delete comments
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String comment_id = request.getParameter("comment_id");
         String comment = request.getParameter("comment");
-        System.out.println("post");
-        System.out.println(comment_id);
-        System.out.println(comment);
         deleteCommentService.deleteComment(comment_id);
         request.getRequestDispatcher("deleteComment.jsp").forward(request, response);
     }

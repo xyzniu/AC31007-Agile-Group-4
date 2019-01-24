@@ -7,8 +7,16 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is a Dao for selecting comments
+ */
 public class SelectCommentDao {
 
+    /**
+     * querying comments by exam paper id
+     * @param exam_paper_id
+     * @return
+     */
     public List<SelectComment> SelectComment(String exam_paper_id) {
         Connection conn = null;
         PreparedStatement ps = null;
@@ -21,15 +29,6 @@ public class SelectCommentDao {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db", "18agileteam4", "7632.at4.2367");
-            //String sql = "INSERT INTO comments(comment_id, comment) VALUES ("+comment_id+","+comment+")";
-            /*if (exam_paper_id == "") {
-                sql = "Select * from comments";
-            } else {
-                sql = "Select * from comments where exam_paper_id = " + exam_paper_id;
-
-            }
-            */
-
             sql = "Select * from comments where exam_paper_id = ?";
             ps = conn.prepareStatement(sql);
             ps.setString(1, exam_paper_id);
@@ -44,6 +43,9 @@ public class SelectCommentDao {
                 c.setExam_paper_id(rs.getString(4));
                 c.setStaff_type(rs.getString(5));
 
+                // get user name by querying different tables
+                // store user name in c.user_id()
+                // TODO: 2019-01-24 may lead a problem
                 switch (c.getStaff_type()) {
                     case Category.EXAM_SETTER:
                         sql = "SELECT * FROM exam_setter WHERE exam_setter_ID=?";

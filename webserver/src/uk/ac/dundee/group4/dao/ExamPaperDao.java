@@ -9,8 +9,16 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is a Dao for exam paper
+ */
 public class ExamPaperDao {
 
+    /**
+     * querying exam papers by exam setter id.
+     * @param examSetterId
+     * @return
+     */
     public List<ExamPaper> selectByExamSetter(int examSetterId) {
         Connection conn = null;
         PreparedStatement ps = null;
@@ -63,6 +71,11 @@ public class ExamPaperDao {
         return examPapers;
     }
 
+    /**
+     * insert a exam paper
+     * @param examPaper
+     * @return
+     */
     public int insertOne(ExamPaper examPaper) {
         Connection connection = null;
         PreparedStatement ps = null;
@@ -85,6 +98,7 @@ public class ExamPaperDao {
             ps.setInt(9, 0);
             rst = ps.executeUpdate();
             if (rst > 0) {
+                // return exam paper id
                 rs = ps.getGeneratedKeys();
                 while (rs.next()) {
                     rst = rs.getInt(1);
@@ -113,19 +127,24 @@ public class ExamPaperDao {
                 e.printStackTrace();
             }
         }
+        // return -1 if insert failed
+        // return exam paper id if inesrt successfully
         return rst;
     }
 
+    /**
+     * querying lastest version by exam paper id
+     * @param examPaperId
+     * @return
+     */
     public Version selectByExamPaperId(int examPaperId) {
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
         Version v = new Version();
-
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
-
             String sql = "SELECT * FROM exam_paper e, version v WHERE e.exam_paper_ID=v.exam_paper_ID AND e.exam_paper_ID=? AND v.version_ID=e.latest_version_ID";
             ps = connection.prepareStatement(sql);
             ps.setInt(1, examPaperId);
@@ -164,6 +183,10 @@ public class ExamPaperDao {
         return v;
     }
 
+    /**
+     * querying all exam papers
+     * @return
+     */
     public List<ExamPaper> selectAll() {
 
         Connection conn = null;
@@ -219,6 +242,12 @@ public class ExamPaperDao {
         return examPapers;
     }
 
+    /**
+     * querying exam papers by staff id and staff type
+     * @param id
+     * @param type
+     * @return
+     */
     public List<ExamPaper> selectByStaffID(int id, int type) {
         Connection connection = null;
         PreparedStatement ps = null;

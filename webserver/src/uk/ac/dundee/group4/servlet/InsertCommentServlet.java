@@ -10,10 +10,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "InsertCommentServlet", value = "InsertCommentServlet")
+/**
+ * This is a Servlet dealing with inserting comments.
+ */
 public class InsertCommentServlet extends HttpServlet {
     InsertCommentService insertCommentService = new InsertCommentService();
 
+    /**
+     * Get comment info from request.
+     * Insert comment info.
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String comment = request.getParameter("comment");
         String exam_paper_id = request.getParameter("exam_paper_id");

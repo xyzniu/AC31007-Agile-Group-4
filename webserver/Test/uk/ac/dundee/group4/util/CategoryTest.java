@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Test class for Category Test
+ * This is a test class for Category
  */
 public class CategoryTest {
 

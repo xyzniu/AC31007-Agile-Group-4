@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Logout servlet for dealing with logout.
+ * This is a Servlet dealing with user logout.
  */
 @WebServlet(name = "LogoutServlet")
 public class LogoutServlet extends HttpServlet {
@@ -18,9 +18,18 @@ public class LogoutServlet extends HttpServlet {
         doGet(request, response);
     }
 
+    /**
+     * User logout.
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // invalidate the session
         HttpSession session = request.getSession();
         session.invalidate();
+        // redirect to login page
         response.sendRedirect("index.jsp");
     }
 }

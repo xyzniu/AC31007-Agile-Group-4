@@ -3,11 +3,23 @@ package uk.ac.dundee.group4.dao;
 import java.sql.*;
 import java.util.List;
 
+/**
+ * This is a Dao for inserting comments
+ */
 public class InsertCommentDao {
 
     public InsertCommentDao() {
     }
 
+    /**
+     * Insert comments by exam paper id, user id and staff type
+     *
+     * @param comment
+     * @param exam_paper_id
+     * @param user_id
+     * @param staff_type
+     * @return
+     */
     public int InsertComment(String comment, String exam_paper_id, String user_id, String staff_type) {
 
         Connection conn = null;
@@ -43,6 +55,7 @@ public class InsertCommentDao {
                 e.printStackTrace();
             }
         }
+        // return -1 if operation failed
         return rst;
     }
 }
