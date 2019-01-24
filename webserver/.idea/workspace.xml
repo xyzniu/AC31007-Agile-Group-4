@@ -6,39 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfacffb9-951a-4904-afe1-82654e2f1c64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Test/uk/ac/dundee/group4/util/CategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/uk/ac/dundee/group4/util/CategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/DeleteCommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/DeleteCommentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UpdateCommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UpdateCommentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/ExamPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/ExamPaper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/Version.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/DeleteCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/DeleteCommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/SelectCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/SelectCommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UpdateCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UpdateCommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/VersionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/VersionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/CommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/CommentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DeleteCommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DeleteCommentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadExamPaperServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadExamPaperServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ListExamPaperServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ListExamPaperServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UpdateCommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UpdateCommentServlet.java" afterDir="false" />
-    </list>
+    <list default="true" id="cfacffb9-951a-4904-afe1-82654e2f1c64" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +49,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/LogoutServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,23 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UserServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/CommentServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="95">
+              <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -305,7 +273,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548370011759" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548370903894" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -554,7 +522,7 @@
       <workItem from="1548337776336" duration="7839000" />
       <workItem from="1548347431136" duration="109000" />
       <workItem from="1548347970239" duration="17000" />
-      <workItem from="1548363133404" duration="6242000" />
+      <workItem from="1548363133404" duration="7032000" />
     </task>
     <servers />
   </component>
@@ -591,12 +559,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58249000" />
+    <option name="totallyTimeSpent" value="59039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="798" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49156627" visible="true" weight="0.30972221" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49156627" visible="true" weight="0.30972221" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -606,7 +575,7 @@
       <window_info id="Web" order="7" sideWeight="0.50843376" side_tool="true" weight="0.19600591" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978479" weight="0.41551247" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978479" weight="0.41540578" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39889196" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -615,7 +584,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021521" side_tool="true" weight="0.42520776" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32963988" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32963988" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -817,17 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#selectByUsernamePasswordAndType#0;class#UserDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1020,8 +978,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
