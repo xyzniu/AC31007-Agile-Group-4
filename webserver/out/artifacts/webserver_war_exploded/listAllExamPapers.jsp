@@ -218,7 +218,7 @@ Time: 17:59
                         %>
 
                         <td style="text-align: center;">
-                            <a class="btn btn-warning" href="#">Review</a>
+                            <a class="btn btn-warning" href="SelectCommentServlet?exam_paper_id=<%=examPaper.getId()%>">Review</a>
                         </td>
 
                     </tr>

@@ -5,6 +5,11 @@ public class SelectComment {
     private String comment_id;
     private String comments;
     private String exam_paper_id;
+<<<<<<< HEAD
+=======
+    private String user_id;
+    private String staff_type;
+>>>>>>> niu
 
     public SelectComment() {
     }
@@ -21,6 +26,11 @@ public class SelectComment {
                 "comment_id='" + comment_id + '\'' +
                 ", comments='" + comments + '\'' +
                 ", exam_paper_id='" + exam_paper_id + '\'' +
+<<<<<<< HEAD
+=======
+                ", user_id='" + user_id + '\'' +
+                ", staff_type='" + staff_type + '\'' +
+>>>>>>> niu
                 '}';
     }
 
@@ -52,4 +62,22 @@ public class SelectComment {
         return comments;
     }
 
+<<<<<<< HEAD
+=======
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
+
+    public String getStaff_type() {
+        return staff_type;
+    }
+
+    public void setStaff_type(String staff_type) {
+        this.staff_type = staff_type;
+    }
+>>>>>>> niu
 }

@@ -108,6 +108,54 @@
         <url-pattern>/LogoutServlet</url-pattern>
     </servlet-mapping>
 
+<<<<<<< HEAD
+>>>>>>> niu
+=======
+    <servlet>
+        <servlet-name>CommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.CommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CommentServlet</servlet-name>
+        <url-pattern>/CommentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>InsertCommentServlet</servlet-name>
+        <url-pattern>/InsertCommentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InsertCommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.InsertCommentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteCommentServlet</servlet-name>
+        <url-pattern>/DeleteCommentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteCommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.DeleteCommentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateCommentServlet</servlet-name>
+        <url-pattern>/UpdateCommentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UpdateCommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.UpdateCommentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SelectCommentServlet</servlet-name>
+        <url-pattern>/SelectCommentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SelectCommentServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.SelectCommentServlet</servlet-class>
+    </servlet>
+
 >>>>>>> niu
 
 </web-app>
