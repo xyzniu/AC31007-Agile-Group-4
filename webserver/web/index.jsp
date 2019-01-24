@@ -39,7 +39,7 @@
         <form action="LoginServlet" method="post">
             <div class="form-group" style="margin: auto;">
                 <input class="form-control" type="text" name="username" placeholder="username" value=""/><br>
-                <input class="form-control" type="text" name="password" placeholder="password" value=""/><br>
+                <input class="form-control" type="password" name="password" placeholder="password" value=""/><br>
             </div>
             <select name="staff" class="form-control">
                 <option value="<%=Category.EXAM_SETTER%>">ExamSetter</option>

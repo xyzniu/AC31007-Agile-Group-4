@@ -55,7 +55,7 @@ public class SelectCommentDao {
                         sql = "SELECT * FROM external_examiner WHERE external_examiner_ID=?";
                         break;
                     case Category.EXAM_VETTING_COMMITTEE:
-                        sql = "SELECT * FROM committee_member WHERE committee_member_ID=?";
+                        sql = "SELECT * FROM committee_member WHERE commitee_member_ID=?";
                         break;
                 }
 

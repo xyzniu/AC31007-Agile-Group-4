@@ -170,24 +170,40 @@ Time: 17:59
                         <td style="text-align: center;">
                             <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
                         </td>
+                        <td style="text-align: center;">
+                            <a class="btn btn-warning" href="SelectCommentServlet?exam_paper_id=<%=examPaper.getId()%>">Review</a>
+                        </td>
                         <%
                                 break;
                             case Category.INTERNAL_MODERATOR:
-                                if (examPaper.getStage() > Category.TO_SIGN_BY_INTERNAL_MODERATOR) {
-                                    continue;
+                                if (examPaper.getStage() != Category.TO_SIGN_BY_INTERNAL_MODERATOR) {
+                                    %>
+                                    <td style="text-align: center;">
+                                        <a class="btn btn-primary disabled" href="#">download</a>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <a class="btn btn-warning disabled" href="#">Review</a>
+                                    </td>
+                                    <%
                                 } else {
                         %>
                         <td style="text-align: center;">
                             <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
                         </td>
+                        <td style="text-align: center;">
+                            <a class="btn btn-warning" href="SelectCommentServlet?exam_paper_id=<%=examPaper.getId()%>">Review</a>
+                        </td>
                         <%
                                 }
                                 break;
                             case Category.EXAM_VETTING_COMMITTEE:
-                                if (examPaper.getStage() < Category.TO_SIGN_BY_EXAM_VETTING_COMMITTEE) {
+                                if (examPaper.getStage() != Category.TO_SIGN_BY_EXAM_VETTING_COMMITTEE) {
                         %>
                         <td style="text-align: center;">
                             <a class="btn btn-primary disabled" href="#">download</a>
+                        </td>
+                        <td style="text-align: center;">
+                            <a class="btn btn-warning disabled" href="#">Review</a>
                         </td>
                         <%
 
@@ -196,20 +212,29 @@ Time: 17:59
                         <td style="text-align: center;">
                             <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
                         </td>
+                        <td style="text-align: center;">
+                            <a class="btn btn-warning" href="SelectCommentServlet?exam_paper_id=<%=examPaper.getId()%>">Review</a>
+                        </td>
                         <%
                                 }
                                 break;
                             case Category.EXTERNAL_EXAMINER:
-                                if (examPaper.getStage() < Category.TO_SIGN_BY_EXTERNAL_EXAMINER) {
+                                if (examPaper.getStage() != Category.TO_SIGN_BY_EXTERNAL_EXAMINER) {
                         %>
                         <td style="text-align: center;">
-                            <a class="btn btn-info disabled" href="#">download</a>
+                            <a class="btn btn-primary disabled" href="#">download</a>
+                        </td>
+                        <td style="text-align: center;">
+                            <a class="btn btn-warning disabled" href="#">Review</a>
                         </td>
                         <%
                         } else {
                         %>
                         <td style="text-align: center;">
                             <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
+                        </td>
+                        <td style="text-align: center;">
+                            <a class="btn btn-warning" href="SelectCommentServlet?exam_paper_id=<%=examPaper.getId()%>">Review</a>
                         </td>
                         <%
                                     }
@@ -217,9 +242,6 @@ Time: 17:59
                             }
                         %>
 
-                        <td style="text-align: center;">
-                            <a class="btn btn-warning" href="SelectCommentServlet?exam_paper_id=<%=examPaper.getId()%>">Review</a>
-                        </td>
 
                     </tr>
                     <%}%>

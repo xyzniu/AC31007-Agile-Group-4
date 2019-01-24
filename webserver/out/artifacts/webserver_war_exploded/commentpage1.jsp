@@ -1,7 +1,4 @@
-<%@ page import="uk.ac.dundee.group4.pojo.ExamPaper" %>
-<%@ page import="uk.ac.dundee.group4.pojo.SelectComment" %>
-<%@ page import="java.util.List" %>
-<%@ page import="uk.ac.dundee.group4.pojo.User" %><%--
+<%--
   User: xyzniu
   Date: 2019-01-24
   Time: 15:12
@@ -28,32 +25,26 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <a href="ListExamPaperServlet">
+                <a href="#">
                     Exam Work Flow System
                 </a>
             </li>
             <li>
-                <a href="ListExamPaperServlet">Dashboard</a>
+                <a href="dashboard.html">Dashboard</a>
             </li>
 
             <li>
-                <a href="ListExamPaperServlet">Archive</a>
+                <a href="#">Archive</a>
             </li>
             <li>
-                <a href="about.jsp">About</a>
+                <a href="#">About</a>
             </li>
             <li>
-                <a href="contact.jsp">Contact Us</a>
+                <a href="#">Contact Us</a>
             </li>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
-
-        <%
-        List<SelectComment> comments = (List<SelectComment>) request.getAttribute("comments_list");
-        User u  = (User) session.getAttribute("user");
-        String exam_paper_id = (String) request.getAttribute("exam_paper_id");
-    %>
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
@@ -69,56 +60,22 @@
                 <table class="table table-bordered table-hover table-striped table table-fixed">
                     <thead>
                     <tr>
-                        <th scope="col">Comments ID</th>
-                        <th scope="col">CommentsUploader</th>
+                        <th  scope="col">Comments ID</th>
+                        <th  scope="col">CommentsUploader</th>
                         <th scope="col">Comments</th>
-
                     </tr>
                     </thead>
                     <tbody>
-
-                    <%
-                        int i = 0;
-                        for (SelectComment comment : comments) {
-
-
-                    %>
                     <tr>
-                        <td><%=++i%>
-                        </td>
-                        <td><%=comment.getUser_id()%>
-                        </td>
-                        <td><%=comment.getComments()%>
-                        </td>
+                        <td><a href="SelectCommentServlet?comment_id='xxxxxx'"></a></td>
+                        <td><a href="SelectCommentServlet?user_ID='xxxxxx'"></a></td>
+                        <td><a href="SelectCommentServlet?comment='xxxxx'"></a></td>
                     </tr>
-
-                    <%
-                        }
-                    %>
                     </tbody>
                 </table>
             </div>
         </div>
-
-
-
     </div>
-
-    <div style="padding-left: 35px; padding-right: 35px;">
-    <form action="InsertCommentServlet" method="post">
-        <input type="hidden" name="user_id" value="<%=u.getId()%>"/>
-        <input type="hidden" name="exam_paper_id" value="<%=exam_paper_id%>"/>
-        <input type="hidden" name="staff_type" value="<%=u.getStaffType()%>"/>
-        <textarea name="textfield3" class="form-control" rows="5" style="margin-left: auto; margin-right: auto; width: 100%;"
-                  placeholder="Please input your comments..."></textarea>
-        <br>
-        <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
-    </form>
-    </div>
-
-
-
-
     <!-- /#page-content-wrapper -->
     <!--scripts-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -134,3 +91,4 @@
 
 </body>
 </html>
+

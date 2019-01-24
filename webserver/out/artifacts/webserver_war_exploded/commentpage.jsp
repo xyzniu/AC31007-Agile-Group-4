@@ -28,22 +28,22 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <a href="#">
+                <a href="ListExamPaperServlet">
                     Exam Work Flow System
                 </a>
             </li>
             <li>
-                <a href="dashboard.html">Dashboard</a>
+                <a href="ListExamPaperServlet">Dashboard</a>
             </li>
 
             <li>
-                <a href="#">Archive</a>
+                <a href="ListExamPaperServlet">Archive</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="about.jsp">About</a>
             </li>
             <li>
-                <a href="#">Contact Us</a>
+                <a href="contact.jsp">Contact Us</a>
             </li>
         </ul>
     </div>
@@ -134,4 +134,3 @@
 
 </body>
 </html>
-
