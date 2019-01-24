@@ -1,7 +1,10 @@
-<%--
-  User: xyzniu
-  Date: 2019-01-24
-  Time: 15:12
+<%@ page import="uk.ac.dundee.group4.pojo.ExamPaper" %>
+<%@ page import="uk.ac.dundee.group4.pojo.SelectComment" %>
+<%@ page import="java.util.List" %>
+<%@ page import="uk.ac.dundee.group4.pojo.User" %><%--
+User: xyzniu
+Date: 2019-01-24
+Time: 15:12
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -46,6 +49,12 @@
     </div>
     <!-- /#sidebar-wrapper -->
 
+    <%
+    List<SelectComment> comments = (List<SelectComment>) request.getAttribute("comments_list");
+    User u  = (User) session.getAttribute("user");
+    String exam_paper_id = (String) request.getAttribute("exam_paper_id");
+    %>
+
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
@@ -60,22 +69,52 @@
                 <table class="table table-bordered table-hover table-striped table table-fixed">
                     <thead>
                     <tr>
-                        <th  scope="col">Comments ID</th>
-                        <th  scope="col">CommentsUploader</th>
+                        <th scope="col">Comments ID</th>
+                        <th scope="col">CommentsUploader</th>
                         <th scope="col">Comments</th>
                     </tr>
                     </thead>
                     <tbody>
+
+                    <%
+                    int i = 0;
+                    for (SelectComment comment : comments) {
+                    %>
                     <tr>
-                        <td><a href="SelectCommentServlet?comment_id='xxxxxx'"></a></td>
-                        <td><a href="SelectCommentServlet?user_ID='xxxxxx'"></a></td>
-                        <td><a href="SelectCommentServlet?comment='xxxxx'"></a></td>
+                        <td><%=++i%>
+                        </td>
+                        <td><%=comment.getUser_id()%>
+                        </td>
+                        <td><%=comment.getComments()%>
+                        </td>
                     </tr>
+
+                    <%
+                    }
+                    %>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+    <form action="InsertCommentServlet" method="post">
+
+        <input type="hidden" name="user_id" value="<%=u.getId()%>"/>
+        <input type="hidden" name="exam_paper_id" value="<%=exam_paper_id%>"/>
+        <input type="hidden" name="staff_type" value="<%=u.getStaffType()%>"/>
+        <td colspan="2">
+            <div align="center" style="padding-left: 35px; padding-right: 35px; ">
+
+            <textarea name="textfield3" class="form-control" rows="5" style="margin-left: auto; margin-right: auto" placeholder="Please input your comments..."></textarea>
+            <!--<textarea name="textfield3" cols="50" rows="10" style="margin-left: auto; margin-right: auto"></textarea>-->
+        </div>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <br>
+                <a href="#" class="btn btn-success" style="float: right; margin-right: 35px;">Submit</a></td>
+    </form>
     <!-- /#page-content-wrapper -->
     <!--scripts-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -91,4 +130,3 @@
 
 </body>
 </html>
-

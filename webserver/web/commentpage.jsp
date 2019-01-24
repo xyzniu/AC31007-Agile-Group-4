@@ -1,11 +1,6 @@
-<%@ page import="uk.ac.dundee.group4.pojo.ExamPaper" %>
 <%@ page import="uk.ac.dundee.group4.pojo.SelectComment" %>
 <%@ page import="java.util.List" %>
-<%@ page import="uk.ac.dundee.group4.pojo.User" %><%--
-  User: xyzniu
-  Date: 2019-01-24
-  Time: 15:12
---%>
+<%@ page import="uk.ac.dundee.group4.pojo.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -28,22 +23,22 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <a href="#">
+                <a href="ListExamPaperServlet">
                     Exam Work Flow System
                 </a>
             </li>
             <li>
-                <a href="dashboard.html">Dashboard</a>
+                <a href="ListExamPaperServlet">Dashboard</a>
             </li>
 
             <li>
-                <a href="#">Archive</a>
+                <a href="ListExamPaperServlet">Archive</a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href="about.jsp">About</a>
             </li>
             <li>
-                <a href="#">Contact Us</a>
+                <a href="contact.jsp">Contact Us</a>
             </li>
         </ul>
     </div>
@@ -99,18 +94,26 @@
                 </table>
             </div>
         </div>
+
+
+
+    </div>
+
+    <div style="padding-left: 35px; padding-right: 35px;">
+        <form action="InsertCommentServlet" method="post">
+            <input type="hidden" name="user_id" value="<%=u.getId()%>"/>
+            <input type="hidden" name="exam_paper_id" value="<%=exam_paper_id%>"/>
+            <input type="hidden" name="staff_type" value="<%=u.getStaffType()%>"/>
+            <textarea name="textfield3" class="form-control" rows="5" style="margin-left: auto; margin-right: auto; width: 100%;"
+                      placeholder="Please input your comments..."></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
+        </form>
     </div>
 
 
-    <label>Please input your comment:</label><br><br>
-    <form action="InsertCommentServlet" method="post">
-        <input type="text" name="comment" style="height:300px;width:500px">
-        <input type="hidden" name="user_id" value="<%=u.getId()%>"/>
-        <input type="hidden" name="exam_paper_id" value="<%=exam_paper_id%>"/>
-        <input type="hidden" name="staff_type" value="<%=u.getStaffType()%>"/>
-        <button type="submit" class="btn btn-success" style="margin-left:350px;background-color: #1fa473">Submit
-        </button>
-    </form>
+
+
     <!-- /#page-content-wrapper -->
     <!--scripts-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -126,4 +129,3 @@
 
 </body>
 </html>
-
