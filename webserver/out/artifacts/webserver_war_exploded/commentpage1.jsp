@@ -1,4 +1,4 @@
-<%@ page import="uk.ac.dundee.group4.pojo.ExamPaper" %><%--
+<%--
   User: xyzniu
   Date: 2019-01-24
   Time: 15:12
@@ -45,7 +45,7 @@
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
-    
+
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container-fluid">
@@ -63,22 +63,19 @@
                         <th  scope="col">Comments ID</th>
                         <th  scope="col">CommentsUploader</th>
                         <th scope="col">Comments</th>
-
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td><a href="SelectCommentServlet?exam_paper_id="></a></td>
-                        <td><a href="#"></a></td>
-                        <td><a href="#"></a></td>
+                        <td><a href="SelectCommentServlet?comment_id='xxxxxx'"></a></td>
+                        <td><a href="SelectCommentServlet?user_ID='xxxxxx'"></a></td>
+                        <td><a href="SelectCommentServlet?comment='xxxxx'"></a></td>
                     </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        <label>Please input your comment:</label><input type="text"name="name"style="height:300px;width:500px">
     </div>
-    <button type="submit" class="btn btn-success"style="margin-left:350px;background-color: #1fa473">Submit</button>
     <!-- /#page-content-wrapper -->
     <!--scripts-->
     <script src="vendor/jquery/jquery.min.js"></script>
