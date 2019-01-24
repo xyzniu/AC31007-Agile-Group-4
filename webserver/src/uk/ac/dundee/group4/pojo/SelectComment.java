@@ -4,6 +4,7 @@ public class SelectComment {
 
     private String comment_id;
     private String comments;
+    private String exam_paper_id;
 
     public SelectComment() {
     }
@@ -11,14 +12,24 @@ public class SelectComment {
     public SelectComment(String id, String comments) {
         this.comment_id = id;
         this.comments = comments;
+        this.exam_paper_id = exam_paper_id;
     }
 
     @Override
     public String toString() {
-        return "Comment{" +
-                "comment_id=" + comment_id +
+        return "SelectComment{" +
+                "comment_id='" + comment_id + '\'' +
                 ", comments='" + comments + '\'' +
+                ", exam_paper_id='" + exam_paper_id + '\'' +
                 '}';
+    }
+
+    public String getExam_paper_id() {
+        return exam_paper_id;
+    }
+
+    public void setExam_paper_id(String exam_paper_id) {
+        this.exam_paper_id = exam_paper_id;
     }
 
     public void setComment_id(String comment_id) {

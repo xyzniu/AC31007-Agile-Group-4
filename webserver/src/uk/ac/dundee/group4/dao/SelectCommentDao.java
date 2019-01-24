@@ -8,7 +8,7 @@ import java.util.List;
 
 public class SelectCommentDao {
 
-    public List<SelectComment> SelectComment(String comment_id) {
+    public List<SelectComment> SelectComment(String exam_paper_id) {
         Connection conn = null;
         PreparedStatement ps = null;
         String sql = null;
@@ -20,11 +20,10 @@ public class SelectCommentDao {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db", "18agileteam4", "7632.at4.2367");
             //String sql = "INSERT INTO comments(comment_id, comment) VALUES ("+comment_id+","+comment+")";
-            if (comment_id == "allthecomment") {
-
+            if (exam_paper_id == "") {
                 sql = "Select * from comments";
             } else {
-                sql = "Select * from comments where comment_id = " + comment_id;
+                sql = "Select * from comments where exam_paper_id = " + exam_paper_id;
 
             }
             System.out.println(sql);
@@ -57,5 +56,3 @@ public class SelectCommentDao {
         return comments;
     }
 }
-
-

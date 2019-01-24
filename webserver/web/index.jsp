@@ -11,7 +11,7 @@
     <title>index</title>
   </head>
   <body>
-  <a href="CommentServlet"> go to Comment servlet</a>
+  <a href="CommentServlet"> go to Show Comment servlet</a>
   <a href="insertComment.jsp"> go to Insert Comment servlet</a>
   <a href="deleteComment.jsp"> go to Delete Comment servlet</a>
   <a href="updateComment.jsp"> go to Update Comment servlet</a>

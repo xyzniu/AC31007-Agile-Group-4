@@ -10,19 +10,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "InsertCommentServlet", value = "InsertCommentServlet")
+@WebServlet(name = "SelectCommentServlet", value = "SelectCommentServlet")
 public class SelectCommentServlet extends HttpServlet {
     SelectCommentService selectCommentService = new SelectCommentService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String comment_id = request.getParameter("comment_id");
+        String exam_paper_id = request.getParameter("exam_paper_id");
         System.out.println("post");
-        System.out.println(comment_id);
-        request.setAttribute("comments_list", selectCommentService.selectComment(comment_id));
+        System.out.println(exam_paper_id);
+        request.setAttribute("comments_list", selectCommentService.selectComment(exam_paper_id));
         request.getRequestDispatcher("showComments.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String exam_paper_id = request.getParameter("exam_paper_id");
+        System.out.println("get");
+        System.out.println(exam_paper_id);
+        request.setAttribute("comments_list", selectCommentService.selectComment(exam_paper_id));
+        request.getRequestDispatcher("showComments.jsp").forward(request, response);
     }
 
 

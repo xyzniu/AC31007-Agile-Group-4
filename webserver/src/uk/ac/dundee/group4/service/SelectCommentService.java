@@ -9,8 +9,8 @@ public class SelectCommentService {
 
     private SelectCommentDao selectCommentDao = new SelectCommentDao();
 
-    public List<SelectComment> selectComment(String comment_id){
+    public List<SelectComment> selectComment(String exam_paper_id){
 
-        return selectCommentDao.SelectComment(comment_id);
+        return selectCommentDao.SelectComment(exam_paper_id);
     }
 }

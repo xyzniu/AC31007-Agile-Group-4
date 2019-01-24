@@ -24,7 +24,7 @@ public class CommentServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         request.setAttribute("comments_list", commentService.selectAll());
-
+        System.out.println(commentService.selectAll());
         request.getRequestDispatcher("showComments.jsp").forward(request, response);
     }
 
