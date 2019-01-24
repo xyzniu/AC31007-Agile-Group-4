@@ -1,6 +1,6 @@
 package uk.ac.dundee.group4.pojo;
 
-import java.util.Date;
+import java.sql.Timestamp;
 import java.util.Objects;
 
 public class ExamPaper {
@@ -12,12 +12,14 @@ public class ExamPaper {
     private int type;
     private int level;
     private int latestVersion;
-    private Date date;
+    private Timestamp timestamp;
+    private String examSetter;
+    private int stage;
 
     public ExamPaper() {
     }
 
-    public ExamPaper(int id, String moduleCode, int examSetterId, int format, int type, int level, int latestVersion, Date date) {
+    public ExamPaper(int id, String moduleCode, int examSetterId, int format, int type, int level, int latestVersion, Timestamp timestamp) {
         this.id = id;
         this.moduleCode = moduleCode;
         this.examSetterId = examSetterId;
@@ -25,7 +27,24 @@ public class ExamPaper {
         this.type = type;
         this.level = level;
         this.latestVersion = latestVersion;
-        this.date = date;
+        this.timestamp = timestamp;
+    }
+
+
+    @Override
+    public String toString() {
+        return "ExamPaper{" +
+                "id=" + id +
+                ", moduleCode='" + moduleCode + '\'' +
+                ", examSetterId=" + examSetterId +
+                ", format=" + format +
+                ", type=" + type +
+                ", level=" + level +
+                ", latestVersion=" + latestVersion +
+                ", timestamp=" + timestamp +
+                ", examSetter='" + examSetter + '\'' +
+                ", stage=" + stage +
+                '}';
     }
 
     @Override
@@ -40,26 +59,12 @@ public class ExamPaper {
                 level == examPaper.level &&
                 latestVersion == examPaper.latestVersion &&
                 Objects.equals(moduleCode, examPaper.moduleCode) &&
-                Objects.equals(date, examPaper.date);
-    }
-
-    @Override
-    public String toString() {
-        return "ExamPaper{" +
-                "id=" + id +
-                ", moduleCode='" + moduleCode + '\'' +
-                ", examSetterId=" + examSetterId +
-                ", format=" + format +
-                ", type=" + type +
-                ", level=" + level +
-                ", latestVersion=" + latestVersion +
-                ", date=" + date +
-                '}';
+                Objects.equals(timestamp, examPaper.timestamp);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, moduleCode, examSetterId, format, type, level, latestVersion, date);
+        return Objects.hash(id, moduleCode, examSetterId, format, type, level, latestVersion, timestamp);
     }
 
     public int getId() {
@@ -118,11 +123,28 @@ public class ExamPaper {
         this.latestVersion = latestVersion;
     }
 
-    public Date getDate() {
-        return date;
+    public Timestamp getTimestamp() {
+        return timestamp;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setTimestamp(Timestamp timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public String getExamSetter() {
+        return examSetter;
+    }
+
+    public void setExamSetter(String examSetter) {
+        this.examSetter = examSetter;
+    }
+
+    public int getStage() {
+        return stage;
+    }
+
+    public void setStage(int stage) {
+        this.stage = stage;
     }
 }
+

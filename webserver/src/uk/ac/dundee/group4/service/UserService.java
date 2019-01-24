@@ -3,13 +3,11 @@ package uk.ac.dundee.group4.service;
 import uk.ac.dundee.group4.dao.UserDao;
 import uk.ac.dundee.group4.pojo.User;
 
-import java.util.List;
-
 public class UserService {
+    UserDao userDao = new UserDao();
 
-    private UserDao userDao = new UserDao();
-
-    public List<User> selectAll(){
-        return userDao.selectAll();
+    public User selectByUsernamePasswordAndType(String username, String password, String type) {
+        return userDao.selectByUsernamePasswordAndType(username, password, type);
     }
+
 }

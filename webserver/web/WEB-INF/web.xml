@@ -10,6 +10,7 @@
         <servlet-name>CommentServlet</servlet-name>
         <servlet-class>uk.ac.dundee.group4.servlet.CommentServlet</servlet-class>
     </servlet>
+<<<<<<< HEAD
     <servlet-mapping>
         <servlet-name>CommentServlet</servlet-name>
         <url-pattern>/CommentServlet</url-pattern>
@@ -50,5 +51,63 @@
         <servlet-name>SelectCommentServlet</servlet-name>
         <servlet-class>uk.ac.dundee.group4.servlet.SelectCommentServlet</servlet-class>
     </servlet>
+=======
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddExamPaperServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.AddExamPaperServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddExamPaperServlet</servlet-name>
+        <url-pattern>/AddExamPaperServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListExamPaperServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.ListExamPaperServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListExamPaperServlet</servlet-name>
+        <url-pattern>/ListExamPaperServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownloadServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.DownloadExamPaperServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DownloadServlet</servlet-name>
+        <url-pattern>/DownloadServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+>>>>>>> niu
 
 </web-app>
