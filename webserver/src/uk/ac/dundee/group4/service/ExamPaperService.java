@@ -23,8 +23,8 @@ public class ExamPaperService {
         return rst;
     }
 
-    public Version selectUrlByModuleCodeAndLevel(String moduleCode, int level) {
-        return dao.selectByExamPaperId(moduleCode, level);
+    public Version selectUrlExamPaperId(int examPaperId) {
+        return dao.selectByExamPaperId(examPaperId);
     }
 
     public List<ExamPaper> selectAll() {

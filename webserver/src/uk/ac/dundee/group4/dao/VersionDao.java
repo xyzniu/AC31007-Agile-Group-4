@@ -20,7 +20,7 @@ public class VersionDao {
             ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setTimestamp(1, version.getTimestamp());
             ps.setString(2, version.getUrl());
-            ps.setString(3, version.getModuleCode());
+            ps.setInt(3, version.getExamPaperId());
             ps.setInt(4, version.getUploaderId());
             ps.executeUpdate();
             resultSet = ps.getGeneratedKeys();
@@ -51,6 +51,38 @@ public class VersionDao {
             }
         }
 
+        return rst;
+    }
+
+    public int updateExamPaperId(int versionId, int examPaperId) {
+        Connection connection = null;
+        PreparedStatement ps = null;
+        int rst = -1;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            String sql = "UPDATE version SET exam_paper_ID=? WHERE version_ID=?";
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, examPaperId);
+            ps.setInt(2, versionId);
+            rst = ps.executeUpdate();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
         return rst;
     }
 

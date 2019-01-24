@@ -20,12 +20,11 @@ public class DownloadExamPaperServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String moduleCode = request.getParameter("moduleCode");
-        String level = request.getParameter("level");
-        if (moduleCode == null || moduleCode.length() <= 0 || level == null || level.length() <= 0) {
+        String examPaperId = request.getParameter("examPaperId");
+        if (examPaperId == null || examPaperId.length() <= 0) {
             return;
         } else {
-            Version v = examPaperService.selectUrlByModuleCodeAndLevel(moduleCode, Integer.parseInt(level));
+            Version v = examPaperService.selectUrlExamPaperId(Integer.parseInt(examPaperId));
             String url = v.getUrl();
             download(request, response, url);
         }

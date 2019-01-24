@@ -41,6 +41,7 @@ public class ListExamPaperServlet extends HttpServlet {
                 examPapers = examPaperService.selectByStaffID(u.getId(), Category.LINK_EXTERNAL_EXAMINER);
                 break;
             case Category.SCHOOL_OFFICE:
+            case Category.LOCAL_EXAMS_OFFICER:
                 examPapers = examPaperService.selectAll();
                 break;
 

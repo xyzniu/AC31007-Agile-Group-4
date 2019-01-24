@@ -15,6 +15,7 @@ public class Category {
     public static final String INTERNAL_MODERATOR = "InternalModerator";
     public static final String EXAM_VETTING_COMMITTEE = "ExamVettingCommittee";
     public static final String EXTERNAL_EXAMINER = "ExternalExaminer";
+    public static final String LOCAL_EXAMS_OFFICER = "LocalExamsOfficer";
     public static final String SCHOOL_OFFICE = "SchoolOffice";
 
     public static final int LINK_INTERNAL_MODERATOR = 1;

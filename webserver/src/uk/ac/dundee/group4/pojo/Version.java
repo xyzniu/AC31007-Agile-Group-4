@@ -8,7 +8,7 @@ public class Version {
     private int id;
     private Timestamp timestamp;
     private String url;
-    private String moduleCode;
+    private int examPaperId;
     private int uploaderId;
 
     private int stage;
@@ -17,24 +17,13 @@ public class Version {
     public Version() {
     }
 
-    public Version(int id, Timestamp timestamp, String url, String moduleCode, int uploaderId) {
+    public Version(int id, Timestamp timestamp, String url, int examPaperId, int uploaderId, int stage) {
         this.id = id;
         this.timestamp = timestamp;
         this.url = url;
-        this.moduleCode = moduleCode;
+        this.examPaperId = examPaperId;
         this.uploaderId = uploaderId;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Version{" +
-                "id=" + id +
-                ", timestamp=" + timestamp +
-                ", url='" + url + '\'' +
-                ", moduleCode=" + moduleCode +
-                ", uploaderId=" + uploaderId +
-                '}';
+        this.stage = stage;
     }
 
     @Override
@@ -43,15 +32,28 @@ public class Version {
         if (o == null || getClass() != o.getClass()) return false;
         Version version = (Version) o;
         return id == version.id &&
-                timestamp == version.timestamp &&
-                moduleCode == version.moduleCode &&
+                examPaperId == version.examPaperId &&
                 uploaderId == version.uploaderId &&
+                stage == version.stage &&
+                Objects.equals(timestamp, version.timestamp) &&
                 Objects.equals(url, version.url);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, timestamp, url, moduleCode, uploaderId);
+        return Objects.hash(id, timestamp, url, examPaperId, uploaderId, stage);
+    }
+
+    @Override
+    public String toString() {
+        return "Version{" +
+                "id=" + id +
+                ", timestamp=" + timestamp +
+                ", url='" + url + '\'' +
+                ", examPaperId=" + examPaperId +
+                ", uploaderId=" + uploaderId +
+                ", stage=" + stage +
+                '}';
     }
 
     public int getId() {
@@ -78,12 +80,12 @@ public class Version {
         this.url = url;
     }
 
-    public String getModuleCode() {
-        return moduleCode;
+    public int getExamPaperId() {
+        return examPaperId;
     }
 
-    public void setModuleCode(String moduleCode) {
-        this.moduleCode = moduleCode;
+    public void setExamPaperId(int examPaperId) {
+        this.examPaperId = examPaperId;
     }
 
     public int getUploaderId() {

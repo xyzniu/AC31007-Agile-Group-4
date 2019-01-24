@@ -66,13 +66,14 @@ public class ExamPaperDao {
     public int insertOne(ExamPaper examPaper) {
         Connection connection = null;
         PreparedStatement ps = null;
+        ResultSet rs = null;
         int rst = -1;
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
             String sql = "INSERT INTO exam_paper VALUES (default, ?,?,?,?,?,?,?,?,?)";
-            ps = connection.prepareStatement(sql);
+            ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, examPaper.getModuleCode());
             ps.setInt(2, examPaper.getExamSetterId());
             ps.setInt(3, examPaper.getFormat());
@@ -83,11 +84,24 @@ public class ExamPaperDao {
             ps.setString(8, "");
             ps.setInt(9, 0);
             rst = ps.executeUpdate();
+            if (rst > 0) {
+                rs = ps.getGeneratedKeys();
+                while (rs.next()) {
+                    rst = rs.getInt(1);
+                }
+            }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
             try {
                 ps.close();
             } catch (SQLException e) {
@@ -102,7 +116,7 @@ public class ExamPaperDao {
         return rst;
     }
 
-    public Version selectByExamPaperId(String moduleCode, int level) {
+    public Version selectByExamPaperId(int examPaperId) {
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -112,16 +126,15 @@ public class ExamPaperDao {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
 
-            String sql = "SELECT * FROM exam_paper e, version v WHERE e.module_code=v.module_code AND e.module_code=? AND e.level=? AND v.version_ID=e.latest_version_ID";
+            String sql = "SELECT * FROM exam_paper e, version v WHERE e.exam_paper_ID=v.exam_paper_ID AND e.exam_paper_ID=? AND v.version_ID=e.latest_version_ID";
             ps = connection.prepareStatement(sql);
-            ps.setString(1, moduleCode);
-            ps.setInt(2, level);
+            ps.setInt(1, examPaperId);
             rs = ps.executeQuery();
             while (rs.next()) {
                 v.setId(rs.getInt("version_ID"));
                 v.setTimestamp(rs.getTimestamp("timestamp"));
                 v.setUrl(rs.getString("version_URL"));
-                v.setModuleCode(rs.getString("module_code"));
+                v.setExamPaperId(rs.getInt("exam_paper_ID"));
                 v.setUploaderId(rs.getInt("uploader_ID"));
                 return v;
             }

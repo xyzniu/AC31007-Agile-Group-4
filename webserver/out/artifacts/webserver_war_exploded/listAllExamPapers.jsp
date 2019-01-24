@@ -13,7 +13,7 @@ Time: 17:59
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="AgileTeam4" content="">
-    <title>Exam Workflow Management System</title>
+    <title>Exam Work Flow Management System</title>
 
     <!--bootstrap and css-->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -28,24 +28,22 @@ Time: 17:59
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <a href="#">
-                    Exam Workflow System
+                <a href="ListExamPaperServlet">
+                    Exam Work Flow System
                 </a>
             </li>
             <li>
-                <a href="dashboard.html">Dashboard</a>
+                <a href="ListExamPaperServlet">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="ListExamPaperServlet">Archive</a>
             </li>
             <li>
-                <a href="#">My Exams</a>
+                <a href="about.jsp">About</a>
             </li>
             <li>
-                <a href="#">Archive</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
+                <a href="contact.jsp">Contact Us</a>
             </li>
         </ul>
     </div>
@@ -66,9 +64,21 @@ Time: 17:59
                 if (u.getStaffType().equals(Category.EXAM_SETTER)) {
             %>
             <a href="addExamSetter.jsp" class="btn btn-primary">Add</a>
-            <a href="LogoutServlet" class="btn btn-danger" style="float: right;">Logout</a>
-            <hr>
             <%
+                }
+            %>
+            <a href="LogoutServlet" class="btn btn-danger" style="float: right;">Logout</a>
+            <div style="clear: both;"></div>
+            <hr>
+
+            <%
+                String msg = (String) request.getAttribute("msg");
+                if (msg != null && msg.length() > 0) {
+            %>
+            <p><%=msg%>
+            </p>
+            <%
+                    request.removeAttribute("msg");
                 }
             %>
             <%
@@ -83,7 +93,7 @@ Time: 17:59
                 <table class="table table-bordered table-hover table-striped table table-fixed">
                     <thead>
                     <tr>
-                        <th  scope="col">Exam Paper ID</th>
+                        <th scope="col">Exam Paper ID</th>
                         <th scope="col">Module Code</th>
 
                         <%
@@ -99,6 +109,7 @@ Time: 17:59
                         <th scope="col">Stage</th>
                         <th scope="col">Timestamp</th>
                         <th scope="col">Download</th>
+                        <th scope="col">Review</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -150,8 +161,64 @@ Time: 17:59
                         </a></td>
                         <td><a href=""><%= examPaper.getTimestamp()%>
                         </a></td>
-                        <td>
-                            <a href="DownloadServlet?moduleCode=<%=examPaper.getModuleCode()%>&level=<%=examPaper.getLevel()%>">download</a>
+                        <%
+                            switch (u.getStaffType()) {
+                                case Category.EXAM_SETTER:
+                                case Category.SCHOOL_OFFICE:
+                                case Category.LOCAL_EXAMS_OFFICER:
+                        %>
+                        <td style="text-align: center;">
+                            <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
+                        </td>
+                        <%
+                                break;
+                            case Category.INTERNAL_MODERATOR:
+                                if (examPaper.getStage() > Category.TO_SIGN_BY_INTERNAL_MODERATOR) {
+                                    continue;
+                                } else {
+                        %>
+                        <td style="text-align: center;">
+                            <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
+                        </td>
+                        <%
+                                }
+                                break;
+                            case Category.EXAM_VETTING_COMMITTEE:
+                                if (examPaper.getStage() < Category.TO_SIGN_BY_EXAM_VETTING_COMMITTEE) {
+                        %>
+                        <td style="text-align: center;">
+                            <a class="btn btn-primary disabled" href="#">download</a>
+                        </td>
+                        <%
+
+                        } else {
+                        %>
+                        <td style="text-align: center;">
+                            <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
+                        </td>
+                        <%
+                                }
+                                break;
+                            case Category.EXTERNAL_EXAMINER:
+                                if (examPaper.getStage() < Category.TO_SIGN_BY_EXTERNAL_EXAMINER) {
+                        %>
+                        <td style="text-align: center;">
+                            <a class="btn btn-info disabled" href="#">download</a>
+                        </td>
+                        <%
+                        } else {
+                        %>
+                        <td style="text-align: center;">
+                            <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
+                        </td>
+                        <%
+                                    }
+                                    break;
+                            }
+                        %>
+
+                        <td style="text-align: center;">
+                            <a class="btn btn-warning" href="#">Review</a>
                         </td>
 
                     </tr>

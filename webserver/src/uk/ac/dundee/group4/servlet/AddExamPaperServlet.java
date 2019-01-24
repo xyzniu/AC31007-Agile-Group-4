@@ -78,14 +78,17 @@ public class AddExamPaperServlet extends HttpServlet {
         v.setUploaderId(user.getId());
         v.setTimestamp(new Timestamp(System.currentTimeMillis()));
         v.setStage(0);
-        v.setModuleCode(moduleCode);
+        v.setExamPaperId(-1);
 
-        int success = versionService.insertOne(v);
-        if (success > 0) {
-            examPaper.setLatestVersion(success);
-            examPaperService.insertExamPaper(examPaper);
+        int versionId = versionService.insertOne(v);
+        if (versionId > 0) {
+            examPaper.setLatestVersion(versionId);
+            int examPaperId = examPaperService.insertExamPaper(examPaper);
+            versionService.updateExamPaperId(versionId, examPaperId);
+            request.setAttribute("msg", "Success!");
             request.getRequestDispatcher("ListExamPaperServlet").forward(request, response);
         } else {
+            request.setAttribute("msg", "Error when add files!");
             request.getRequestDispatcher("ListExamPaperServlet").forward(request, response);
         }
     }

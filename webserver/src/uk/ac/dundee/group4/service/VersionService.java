@@ -13,4 +13,8 @@ public class VersionService {
         return rst;
     }
 
+    public int updateExamPaperId(int versionId, int examPaperId) {
+        return versionDao.updateExamPaperId(versionId, examPaperId);
+    }
+
 }
