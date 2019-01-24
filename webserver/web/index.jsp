@@ -7,18 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<<<<<<< HEAD
-  <head>
-    <title>index</title>
-  </head>
-  <body>
-  <a href="CommentServlet"> go to Show Comment servlet</a>
-  <a href="insertComment.jsp"> go to Insert Comment servlet</a>
-  <a href="deleteComment.jsp"> go to Delete Comment servlet</a>
-  <a href="updateComment.jsp"> go to Update Comment servlet</a>
-  <a href="selectComment.jsp"> go to Select Comment servlet</a>
-  </body>
-=======
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -66,5 +54,4 @@
     </div>
 </div>
 </body>
->>>>>>> niu
 </html>

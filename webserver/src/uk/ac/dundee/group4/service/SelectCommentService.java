@@ -7,11 +7,8 @@ import uk.ac.dundee.group4.pojo.SelectComment;
 
 public class SelectCommentService {
 
-<<<<<<< HEAD
-=======
     public SelectCommentService(){}
 
->>>>>>> niu
     private SelectCommentDao selectCommentDao = new SelectCommentDao();
 
     public List<SelectComment> selectComment(String exam_paper_id){

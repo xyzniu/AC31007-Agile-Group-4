@@ -1,10 +1,7 @@
 package uk.ac.dundee.group4.dao;
 
 import uk.ac.dundee.group4.pojo.SelectComment;
-<<<<<<< HEAD
-=======
 import uk.ac.dundee.group4.util.Category;
->>>>>>> niu
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,10 +14,7 @@ public class SelectCommentDao {
         PreparedStatement ps = null;
         String sql = null;
         ResultSet rs = null;
-<<<<<<< HEAD
-=======
         ResultSet rs2 = null;
->>>>>>> niu
         List<SelectComment> comments = new ArrayList<>();
 
 
@@ -28,21 +22,12 @@ public class SelectCommentDao {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db", "18agileteam4", "7632.at4.2367");
             //String sql = "INSERT INTO comments(comment_id, comment) VALUES ("+comment_id+","+comment+")";
-<<<<<<< HEAD
-            if (exam_paper_id == "") {
-=======
             /*if (exam_paper_id == "") {
->>>>>>> niu
                 sql = "Select * from comments";
             } else {
                 sql = "Select * from comments where exam_paper_id = " + exam_paper_id;
 
             }
-<<<<<<< HEAD
-            System.out.println(sql);
-            ps = conn.prepareStatement(sql);
-            rs = ps.executeQuery();
-=======
             */
 
             sql = "Select * from comments where exam_paper_id = ?";
@@ -51,14 +36,10 @@ public class SelectCommentDao {
             rs = ps.executeQuery();
             sql = "Select * from comments where exam_paper_id = ?";
 
->>>>>>> niu
             while (rs.next()) {
                 SelectComment c = new SelectComment();
                 c.setComment_id(rs.getString(1));
                 c.setComments(rs.getString(2));
-<<<<<<< HEAD
-                comments.add(c);
-=======
                 c.setUser_id(rs.getString(3));
                 c.setExam_paper_id(rs.getString(4));
                 c.setStaff_type(rs.getString(5));
@@ -88,7 +69,6 @@ public class SelectCommentDao {
                 }
                 comments.add(c);
                 System.out.println(c);
->>>>>>> niu
             }
 
         } catch (ClassNotFoundException e) {
