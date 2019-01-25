@@ -1,7 +1,7 @@
 package uk.ac.dundee.group4.pojo;
 
 /**
- * Comment
+ * Comment class
  */
 public class Comment {
 
@@ -10,8 +10,11 @@ public class Comment {
 
     public Comment() {
     }
-
+    /**
+    * Comment statement
+    */
     public Comment(int id, String comments) {
+
         this.comment_id = id;
         this.comments = comments;
     }
