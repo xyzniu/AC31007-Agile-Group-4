@@ -108,5 +108,14 @@
         <servlet-class>uk.ac.dundee.group4.servlet.SelectCommentServlet</servlet-class>
     </servlet>
 
+    <servlet-mapping>
+        <servlet-name>InsertCommentFileServlet</servlet-name>
+        <url-pattern>/InsertCommentFileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InsertCommentFileServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.InsertCommentFileServlet</servlet-class>
+    </servlet>
+
 
 </web-app>
