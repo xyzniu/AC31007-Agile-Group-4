@@ -109,7 +109,7 @@
         <input type="hidden" name="user_id" value="<%=u.getId()%>"/>
         <input type="hidden" name="exam_paper_id" value="<%=exam_paper_id%>"/>
         <input type="hidden" name="staff_type" value="<%=u.getStaffType()%>"/>
-        <textarea name="textfield3" class="form-control" rows="5" style="margin-left: auto; margin-right: auto; width: 100%;"
+        <textarea name="comment" class="form-control" rows="5" style="margin-left: auto; margin-right: auto; width: 100%;"
                   placeholder="Please input your comments..."></textarea>
         <br>
         <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
