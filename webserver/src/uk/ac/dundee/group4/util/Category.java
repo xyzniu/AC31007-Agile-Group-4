@@ -26,4 +26,7 @@ public class Category {
     public static final int TO_SIGN_BY_EXAM_VETTING_COMMITTEE = 1;
     public static final int TO_SIGN_BY_EXTERNAL_EXAMINER = 2;
     public static final int DONE = 3;
+
+    public static final int NOTSIGN = 0;
+    public static final int SIGNED = 1;
 }

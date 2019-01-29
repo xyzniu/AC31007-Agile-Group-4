@@ -4,6 +4,7 @@ import uk.ac.dundee.group4.dao.ExamPaperDao;
 import uk.ac.dundee.group4.pojo.ExamPaper;
 import uk.ac.dundee.group4.pojo.Version;
 
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -70,6 +71,7 @@ public class ExamPaperService {
 
     }
 
+<<<<<<< HEAD
     /**
      * querying url by exam paper id
      *
@@ -77,4 +79,13 @@ public class ExamPaperService {
      * @return
      */
 
+=======
+    public List<ExamPaper> selectToAllocate() {
+        return dao.selectToAllocate();
+    }
+
+    public List<HashSet<Integer>> selectLinkByExamPaperID(int id) {
+        return dao.selectLinkByExamPaperID(id);
+    }
+>>>>>>> niu2
 }

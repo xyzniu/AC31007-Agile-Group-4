@@ -67,11 +67,13 @@ Time: 15:12
 
             <div class="table-fixed">
                 <table class="table table-bordered table-hover table-striped table table-fixed">
+
                     <thead>
                     <tr>
                         <th scope="col">Comments ID</th>
                         <th scope="col">CommentsUploader</th>
                         <th scope="col">Comments</th>
+                        <th scope="col">Download</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -86,6 +88,9 @@ Time: 15:12
                         <td><%=comment.getUser_id()%>
                         </td>
                         <td><%=comment.getComments()%>
+                        </td>
+                        <td style="text-align: center;">
+                            <a class="btn btn-primary" href="DownloadServlet?examPaperId=1">download</a>
                         </td>
                     </tr>
 
