@@ -1,11 +1,6 @@
-<%@ page import="uk.ac.dundee.group4.util.*" %><%--
-User: xyzniu
-Date: 2019-01-21
-Time: 18:03
---%>
+<%@ page import="uk.ac.dundee.group4.util.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,32 +13,16 @@ Time: 18:03
         <link href="css/simple-sidebar.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
-</head>
 <body>
-
     <div id="wrapper" class="toggled">
-
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="ListExamPaperServlet">
-                        Exam Work Flow System
-                    </a>
-                </li>
-                <li>
-                    <a href="ListExamPaperServlet">Dashboard</a>
-                </li>
-
-                <li>
-                    <a href="ListExamPaperServlet">Archive</a>
-                </li>
-                <li>
-                    <a href="about.jsp">About</a>
-                </li>
-                <li>
-                    <a href="contact.jsp">Contact Us</a>
-                </li>
+                <li class="sidebar-brand"><a href="ListExamPaperServlet">Exam Work Flow System</a></li>
+                <li><a href="ListExamPaperServlet">Dashboard</a></li>
+                <li><a href="ListExamPaperServlet">Archive</a></li>
+                <li><a href="about.jsp">About</a></li>
+                <li><a href="contact.jsp">Contact Us</a></li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -54,16 +33,13 @@ Time: 18:03
                 <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"></i></a>
                 <h1>Upload an Exam</h1>
                 <hr>
-
                 <form enctype="multipart/form-data" method="post" action="AddExamPaperServlet">
-
                     <!--module code input field-->
                     <div class="form-group">
                         <label for="InputModuleCode">Module Code:</label>
-                        <input type="text" class="form-control" maxlength="7" id ="InputModuleCode" placeholder="Enter module code" name="moduleCode" value="" required/>
+                        <input style="text-transform: uppercase;" type="text" class="form-control" maxlength="7" id ="InputModuleCode"  name="moduleCode" value="" required/>
                     </div>
                     <!--/module code input field-->
-
                     <!--Radio for format-->
                     <label>Format:</label>
                     <br>
@@ -106,8 +82,21 @@ Time: 18:03
                     </div>
                     <!--/Radio for level-->
                     <br>
+                    <!--Radio for semester-->
+                    <label>Semester:</label>
                     <br>
-
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadio7" class="custom-control-input" name="semester" value="" required>
+                        <label class="custom-control-label" for="customRadio7">Semester 1 (Weeks 1 - 14)</label>
+                    </div>
+                    
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadio8" class="custom-control-input" name="semster" value="" required>
+                        <label class="custom-control-label" for="customRadio8">Semester 2 (Weeks 15 to 25)</label>
+                    </div>
+                    <!--/Radio for semester-->
+                    <br>
+                    <br>
                     <!--upload button-->
                     <div class="custom-file">
 					<label class="custom-file-label" for="customFile">Choose a file to upload:</label>
@@ -121,7 +110,6 @@ Time: 18:03
                     <input type="submit" class="btn btn-primary" value="Submit"/>
                     <input type="submit" onclick="JavaScript:history.go(-1);return false;" class="btn btn-danger" value="Cancel"/>
                     <!--/submit button-->
-
                 </form>
             </div>
         </div>
@@ -137,5 +125,6 @@ Time: 18:03
             });
         </script>
         <!--/scripts-->
+        </div>
     </body>
     </html>

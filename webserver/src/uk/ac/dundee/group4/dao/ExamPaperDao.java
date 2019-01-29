@@ -1,12 +1,15 @@
 package uk.ac.dundee.group4.dao;
 
 import uk.ac.dundee.group4.pojo.ExamPaper;
+import uk.ac.dundee.group4.pojo.User;
 import uk.ac.dundee.group4.pojo.Version;
 import uk.ac.dundee.group4.util.Category;
 import uk.ac.dundee.group4.util.DBInfo;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -16,6 +19,7 @@ public class ExamPaperDao {
 
     /**
      * querying exam papers by exam setter id.
+     *
      * @param examSetterId
      * @return
      */
@@ -73,6 +77,7 @@ public class ExamPaperDao {
 
     /**
      * insert a exam paper
+     *
      * @param examPaper
      * @return
      */
@@ -134,6 +139,7 @@ public class ExamPaperDao {
 
     /**
      * querying lastest version by exam paper id
+     *
      * @param examPaperId
      * @return
      */
@@ -185,6 +191,7 @@ public class ExamPaperDao {
 
     /**
      * querying all exam papers
+     *
      * @return
      */
     public List<ExamPaper> selectAll() {
@@ -244,6 +251,7 @@ public class ExamPaperDao {
 
     /**
      * querying exam papers by staff id and staff type
+     *
      * @param id
      * @param type
      * @return
@@ -302,5 +310,117 @@ public class ExamPaperDao {
         }
         return examPapers;
 
+    }
+
+    /**
+     * querying all the links in link table by exam paper ID
+     *
+     * @param id
+     * @return
+     */
+    public List<HashSet<Integer>> selectLinkByExamPaperID(int id) {
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        List<HashSet<Integer>> lists = new ArrayList<>();
+        for (int i = 0; i < 4; i++) {
+            lists.add(new HashSet<Integer>());
+        }
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            String sql = "SELECT * FROM link_table WHERE exam_paper_ID = ?";
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                switch (rs.getInt("link_control")) {
+                    case 1:
+                        lists.get(1).add(rs.getInt("staff_ID"));
+                        break;
+                    case 2:
+                        lists.get(2).add(rs.getInt("staff_ID"));
+                        break;
+                    case 3:
+                        lists.get(3).add(rs.getInt("staff_ID"));
+                        break;
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return lists;
+    }
+
+    public List<ExamPaper> selectToAllocate() {
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        List<ExamPaper> list = new ArrayList<>();
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            String sql = "SELECT * FROM exam_paper WHERE stage='-1' OR stage='0'";
+            ps = connection.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                ExamPaper examPaper = new ExamPaper();
+                examPaper.setId(rs.getInt("exam_paper_ID"));
+                examPaper.setModuleCode(rs.getString("module_code"));
+                examPaper.setExamSetterId(rs.getInt("exam_setter_ID"));
+                examPaper.setFormat(rs.getInt("format"));
+                examPaper.setType(rs.getInt("type"));
+                examPaper.setLevel(rs.getInt("level"));
+                examPaper.setLatestVersion(rs.getInt("latest_version_ID"));
+                examPaper.setTimestamp(rs.getTimestamp("timestamp"));
+                examPaper.setStage(rs.getInt("stage"));
+                list.add(examPaper);
+            }
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return list;
     }
 }

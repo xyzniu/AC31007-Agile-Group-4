@@ -108,5 +108,23 @@
         <servlet-class>uk.ac.dundee.group4.servlet.SelectCommentServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>AllocatingServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.AllocatingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllocatingServlet</servlet-name>
+        <url-pattern>/AllocatingServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ShowAllocateServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.ShowAllocateServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ShowAllocateServlet</servlet-name>
+        <url-pattern>/ShowAllocateServlet</url-pattern>
+    </servlet-mapping>
 
 </web-app>

@@ -4,6 +4,7 @@ import uk.ac.dundee.group4.dao.ExamPaperDao;
 import uk.ac.dundee.group4.pojo.ExamPaper;
 import uk.ac.dundee.group4.pojo.Version;
 
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -68,5 +69,13 @@ public class ExamPaperService {
     public List<ExamPaper> selectByStaffID(int id, int type) {
         return dao.selectByStaffID(id, type);
 
+    }
+
+    public List<ExamPaper> selectToAllocate() {
+        return dao.selectToAllocate();
+    }
+
+    public List<HashSet<Integer>> selectLinkByExamPaperID(int id) {
+        return dao.selectLinkByExamPaperID(id);
     }
 }

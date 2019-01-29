@@ -66,7 +66,7 @@
             </p>
 
             <table class="table table-bordered table-hover table-sm">
-                <thead class="thead-dark">
+                <thead class="thead">
                 <tr>
                     <th scope="col">Exam Diet</th>
                     <th scope="col">Month</th>
@@ -98,7 +98,7 @@
                 </tbody>
 
                 <table class="table table-bordered table-hover table-sm">
-                    <thead class="thead-dark">
+                    <thead class="thead">
                     <tr>
                         <th scope="col">Venue</th>
                         <th scope="col">Location</th>

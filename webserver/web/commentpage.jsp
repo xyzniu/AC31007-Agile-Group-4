@@ -59,7 +59,7 @@
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"></i></a>
-            <h1>Welcome to your CommentPage!</h1>
+            <h1>Comment History</h1>
             <hr>
             <a href="LogoutServlet" class="btn btn-danger" style="float: right;">Logout</a>
             <div style="clear: both;"></div>
@@ -70,8 +70,8 @@
                     <thead>
                     <tr>
                         <th scope="col">Comments ID</th>
-                        <th scope="col">CommentsUploader</th>
-                        <th scope="col">Comments</th>
+                        <th scope="col">Uploader</th>
+                        <th scope="col">Comment(s)</th>
 
                     </tr>
                     </thead>
@@ -109,11 +109,22 @@
         <input type="hidden" name="user_id" value="<%=u.getId()%>"/>
         <input type="hidden" name="exam_paper_id" value="<%=exam_paper_id%>"/>
         <input type="hidden" name="staff_type" value="<%=u.getStaffType()%>"/>
-        <textarea name="comment" class="form-control" rows="5" style="margin-left: auto; margin-right: auto; width: 100%;"
+        <label>Upload a copy of this exam with your annotations (required):</label>
+        <div class="custom-file" style="width: 100%">
+                <label class="custom-file-label" for="customFile">Choose a file to upload:</label>
+                    <input type="file" class="custom-file-input" id="customFile" name="commentfile"/>
+
+                </div>
+                <br>
+                <br>
+                <label>Add comments with this upload (required):</label>
+        <textarea name="textfield3" class="form-control" rows="5" style="margin-left: auto; margin-right: auto; width: 100%;"
                   placeholder="Please input your comments..."></textarea>
         <br>
         <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
     </form>
+    <br>
+    <br>
     </div>
 
 
