@@ -18,9 +18,10 @@ public class InsertCommentDao {
      * @param exam_paper_id
      * @param user_id
      * @param staff_type
+     * @param version_id
      * @return
      */
-    public int InsertComment(String comment, String exam_paper_id, String user_id, String staff_type) {
+    public int InsertComment(String comment, String exam_paper_id, String user_id, String staff_type,String version_id) {
 
         Connection conn = null;
         PreparedStatement ps = null;
@@ -31,12 +32,13 @@ public class InsertCommentDao {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db", "18agileteam4", "7632.at4.2367");
             //String sql = "INSERT INTO comments(comment_id, comment) VALUES ("+comment_id+","+comment+")";
-            String sql = "insert INTO comments (comment_id, comment,user_ID,exam_paper_id, staff_type) value ( default ,?,?,?,?)";
+            String sql = "insert INTO comments (comment_id, comment,user_ID,exam_paper_id, staff_type, version_ID) value ( default ,?,?,?,?,?)";
             ps = conn.prepareStatement(sql);
             ps.setString(1, comment);
             ps.setString(2, user_id);
             ps.setString(3, exam_paper_id);
             ps.setString(4, staff_type);
+            ps.setString(5, version_id);
             rst = ps.executeUpdate();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

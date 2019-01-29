@@ -26,7 +26,6 @@ import java.util.List;
 public class InsertCommentFileServlet extends HttpServlet {
     VersionService versionService = new VersionService();
 
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ExamPaper examPaper = new ExamPaper();
         String path = null;
@@ -37,7 +36,6 @@ public class InsertCommentFileServlet extends HttpServlet {
             if (!ServletFileUpload.isMultipartContent(request)) {
                 // should not happen
                 return;
-
             }
             List<FileItem> list = upload.parseRequest(request);
 
@@ -52,14 +50,12 @@ public class InsertCommentFileServlet extends HttpServlet {
                             System.out.println("version");
                         default:
                             System.out.println("No such field.");
-
                     }
                 }else {
                     // if item is a file
                     path = storeItem(item);
                     System.out.println(path);
                 }
-
             }
 
         }catch (FileUploadException e) {
@@ -94,8 +90,6 @@ public class InsertCommentFileServlet extends HttpServlet {
             request.setAttribute("msg", "Error when add files!");
             request.getRequestDispatcher("ListExamPaperServlet").forward(request, response);
         }
-
-
     }
 
     private String storeItem(FileItem item) throws IOException {

@@ -30,7 +30,8 @@ public class InsertCommentServlet extends HttpServlet {
         String exam_paper_id = request.getParameter("exam_paper_id");
         String user_id = request.getParameter("user_id");
         String staff_type = request.getParameter("staff_type");
-        insertCommentService.insertComment(comment, exam_paper_id, user_id, staff_type);
+        String version_id = request.getParameter("version_id");
+        insertCommentService.insertComment(comment, exam_paper_id, user_id, staff_type, version_id);
         request.getRequestDispatcher("SelectCommentServlet").forward(request, response);
     }
 

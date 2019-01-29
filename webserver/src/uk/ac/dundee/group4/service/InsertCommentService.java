@@ -18,7 +18,7 @@ public class InsertCommentService {
      * @param user_id
      * @param staff_type
      */
-    public void insertComment(String comment, String exam_paper_id, String user_id, String staff_type) {
-        insertCommentDao.InsertComment(comment, exam_paper_id, user_id, staff_type);
+    public void insertComment(String comment, String exam_paper_id, String user_id, String staff_type, String version_id) {
+        insertCommentDao.InsertComment(comment, exam_paper_id, user_id, staff_type, version_id);
     }
 }
