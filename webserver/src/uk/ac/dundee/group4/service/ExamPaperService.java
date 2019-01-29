@@ -69,4 +69,12 @@ public class ExamPaperService {
         return dao.selectByStaffID(id, type);
 
     }
+
+    /**
+     * querying url by exam paper id
+     *
+     * @param examPaperId
+     * @return
+     */
+
 }

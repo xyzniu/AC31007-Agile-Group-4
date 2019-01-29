@@ -32,4 +32,8 @@ public class VersionService {
         return versionDao.updateExamPaperId(versionId, examPaperId);
     }
 
+    public String selectUrlbyVersionId(int versionId) {
+        return versionDao.selectUrlbyVersionId(versionId);
+    }
+
 }

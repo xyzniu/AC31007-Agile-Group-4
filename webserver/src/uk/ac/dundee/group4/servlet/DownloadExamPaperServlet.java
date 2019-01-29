@@ -28,11 +28,11 @@ public class DownloadExamPaperServlet extends HttpServlet {
      * @throws IOException
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String examPaperId = request.getParameter("examPaperId");
-        if (examPaperId == null || examPaperId.length() <= 0) {
+        String versionId = request.getParameter("versionId");
+        if (versionId == null || versionId.length() <= 0) {
             return;
         } else {
-            Version v = examPaperService.selectUrlExamPaperId(Integer.parseInt(examPaperId));
+            Version v = examPaperService.selectUrlExamPaperId(Integer.parseInt(versionId));
             String url = v.getUrl();
             download(request, response, url);
         }

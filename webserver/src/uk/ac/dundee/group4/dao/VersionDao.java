@@ -1,5 +1,6 @@
 package uk.ac.dundee.group4.dao;
 
+import uk.ac.dundee.group4.pojo.CommentFile;
 import uk.ac.dundee.group4.pojo.Version;
 import uk.ac.dundee.group4.util.DBInfo;
 
@@ -102,5 +103,40 @@ public class VersionDao {
         }
         return rst;
     }
+    public String selectUrlbyVersionId(int versionId) {
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String ResultUrl = null;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            String sql = "Select version where version_ID=?";
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, versionId);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                ResultUrl = rs.getString("url");
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return ResultUrl;
+    }
+
 
 }
