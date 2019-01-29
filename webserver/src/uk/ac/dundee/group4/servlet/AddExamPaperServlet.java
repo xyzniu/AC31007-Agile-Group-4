@@ -79,9 +79,6 @@ public class AddExamPaperServlet extends HttpServlet {
                 } else {
                     // if item is a file
                     path = storeItem(item, moduleCode);
-                    System.out.println("---------------");
-                    System.out.println(path);
-                    System.out.println("---------------");
                 }
             }
         } catch (FileUploadException e) {
