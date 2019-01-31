@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="13cc6a7b-db25-4eaf-b639-d577a8680c5d" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/webserver_war.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -72,6 +73,9 @@
 =======
     <list default="true" id="cfacffb9-951a-4904-afe1-82654e2f1c64" name="Default Changelist" comment="" />
 >>>>>>> parent of 57ae2ac... jan 31
+=======
+    <list default="true" id="cfacffb9-951a-4904-afe1-82654e2f1c64" name="Default Changelist" comment="" />
+>>>>>>> parent of 57ae2ac... jan 31
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +86,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java">
@@ -95,6 +100,10 @@
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java">
           <provider selected="true" editor-type-id="text-editor">
 >>>>>>> parent of 57ae2ac... jan 31
+=======
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> parent of 57ae2ac... jan 31
             <state relative-caret-position="914">
               <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
               <folding>
@@ -103,6 +112,9 @@
                 <element signature="method#selectSign#0;class#LinkDao#0" />
               </folding>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -115,9 +127,12 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="95">
               <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
 =======
+=======
+>>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
             <state relative-caret-position="341">
@@ -126,6 +141,9 @@
                 <element signature="imports" expanded="true" />
               </folding>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -134,6 +152,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UpdateCommentServlet.java">
@@ -143,11 +162,16 @@
 =======
 =======
 >>>>>>> parent of 57ae2ac... jan 31
+=======
+>>>>>>> parent of 57ae2ac... jan 31
         <entry file="file://$PROJECT_DIR$/web/listAllExamPapers.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1421">
               <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -156,6 +180,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentDaoTest.java">
@@ -167,6 +192,10 @@
 >>>>>>> parent of 57ae2ac... jan 31
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java">
           <provider selected="true" editor-type-id="text-editor">
+=======
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> parent of 57ae2ac... jan 31
             <state relative-caret-position="347">
               <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
@@ -175,6 +204,9 @@
                 <element signature="e#291#292#0" expanded="true" />
               </folding>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -185,10 +217,20 @@
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+=======
+=======
+>>>>>>> parent of 57ae2ac... jan 31
+        <entry file="file://$PROJECT_DIR$/web/commentpage1.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1767">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
 =======
         <entry file="file://$PROJECT_DIR$/web/commentpage1.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -196,10 +238,6 @@
               <caret line="93" selection-start-line="93" selection-end-line="93" />
 >>>>>>> parent of 57ae2ac... jan 31
 =======
-        <entry file="file://$PROJECT_DIR$/web/commentpage1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1767">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
 >>>>>>> parent of 57ae2ac... jan 31
             </state>
           </provider>
@@ -218,6 +256,9 @@
             <state relative-caret-position="1828">
               <caret line="130" column="56" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -226,6 +267,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/CommentFile.java">
@@ -240,11 +282,18 @@
 >>>>>>> parent of 57ae2ac... jan 31
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java">
           <provider selected="true" editor-type-id="text-editor">
+=======
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> parent of 57ae2ac... jan 31
             <state relative-caret-position="266">
               <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="method#selectAll#0;class#CommentDao#0" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -256,6 +305,7 @@
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
@@ -263,6 +313,10 @@
 =======
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java">
           <provider selected="true" editor-type-id="text-editor">
+=======
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+>>>>>>> parent of 57ae2ac... jan 31
 =======
         <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -293,6 +347,9 @@
             <state relative-caret-position="438">
               <caret line="24" column="57" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="57" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -305,8 +362,13 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="57">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
+=======
+            <state relative-caret-position="399">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+>>>>>>> parent of 57ae2ac... jan 31
 =======
             <state relative-caret-position="399">
               <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
@@ -409,6 +471,9 @@
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -424,11 +489,18 @@
   </component>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectFrameBounds">
     <option name="x" value="47" />
     <option name="y" value="23" />
     <option name="width" value="1363" />
     <option name="height" value="798" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="801" />
+>>>>>>> parent of 57ae2ac... jan 31
 =======
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
@@ -505,7 +577,10 @@
               <item name="group4" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 57ae2ac... jan 31
             </path>
             <path>
               <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
@@ -524,6 +599,9 @@
               <item name="Test" type="462c0819:PsiDirectoryNode" />
               <item name="group4" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
             </path>
             <path>
@@ -568,8 +646,13 @@
       </pane>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+>>>>>>> parent of 57ae2ac... jan 31
 =======
       <pane id="PackagesPane" />
       <pane id="Scope" />
@@ -585,8 +668,11 @@
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548952180196" />
 =======
+=======
+>>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548942460579" />
@@ -614,6 +700,9 @@
       <recent name="$PROJECT_DIR$/web" />
     </key>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -805,6 +894,9 @@
       <workItem from="1548932616320" duration="2985000" />
       <workItem from="1548936874031" duration="3919000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 57ae2ac... jan 31
+=======
 >>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
@@ -814,6 +906,7 @@
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="2254000" />
   </component>
   <component name="ToolWindowManager">
@@ -821,6 +914,15 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2633896" />
+=======
+    <option name="totallyTimeSpent" value="90330000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1" y="23" width="1440" height="798" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4885321" visible="true" weight="0.25277779" />
+>>>>>>> parent of 57ae2ac... jan 31
 =======
     <option name="totallyTimeSpent" value="90330000" />
   </component>
@@ -851,10 +953,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3287483" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
 =======
+=======
+>>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
@@ -887,8 +992,11 @@
   <component name="editorHistoryManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentFileDao.java">
 =======
+=======
+>>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UpdateCommentServlet.java">
@@ -1004,7 +1112,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 57ae2ac... jan 31
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="231" column="34" lean-forward="true" selection-start-line="231" selection-start-column="34" selection-end-line="231" selection-end-column="34" />
@@ -1038,6 +1149,7 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/DeleteCommentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1048,6 +1160,8 @@
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java">
 =======
+=======
+>>>>>>> parent of 57ae2ac... jan 31
 =======
 >>>>>>> parent of 57ae2ac... jan 31
     <entry file="file://$PROJECT_DIR$/web/showComments.jsp">
@@ -1172,6 +1286,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/allocating.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/allocatingList.jsp">
 >>>>>>> parent of 57ae2ac... jan 31
       <provider selected="true" editor-type-id="text-editor">
@@ -1186,6 +1307,16 @@
 =======
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentFileDao.java">
 =======
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentFileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="method#selectBycommentFileId#0;class#CommentFileDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentFileDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -1312,6 +1443,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
@@ -1340,18 +1472,37 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/CommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/SelectCommentService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+>>>>>>> parent of 57ae2ac... jan 31
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="438">
           <caret line="24" column="57" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="57" />
+=======
+        <state relative-caret-position="606">
+          <caret line="155" column="33" selection-start-line="155" selection-start-column="33" selection-end-line="155" selection-end-column="33" />
+>>>>>>> parent of 57ae2ac... jan 31
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java">
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="399">
           <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
 >>>>>>> parent of 57ae2ac... jan 31
@@ -1404,11 +1555,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="24" column="57" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="57" />
+=======
+        <state relative-caret-position="165">
+          <caret line="36" column="66" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/listAllExamPapers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1421">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SignServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+>>>>>>> parent of 57ae2ac... jan 31
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="399">
           <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
 >>>>>>> parent of 57ae2ac... jan 31
@@ -1465,6 +1652,24 @@
         <state relative-caret-position="914">
           <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
           <folding>
+=======
+        <state relative-caret-position="1762">
+          <caret line="427" selection-start-line="427" selection-end-line="427" />
+          <folding>
+            <element signature="method#selectByExamSetter#0;class#ExamPaperDao#0" />
+            <element signature="method#insertOne#0;class#ExamPaperDao#0" />
+            <element signature="method#selectByExamPaperId#0;class#ExamPaperDao#0" />
+            <element signature="method#selectAll#0;class#ExamPaperDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="914">
+          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+          <folding>
+>>>>>>> parent of 57ae2ac... jan 31
             <element signature="imports" expanded="true" />
             <element signature="method#getConnection#0;class#LinkDao#0" />
             <element signature="method#selectSign#0;class#LinkDao#0" />
@@ -1473,6 +1678,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
@@ -1542,11 +1748,39 @@
           <folding>
             <element signature="method#selectAll#0;class#CommentDao#0" />
           </folding>
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="method#selectAll#0;class#CommentDao#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/commentpage1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+>>>>>>> parent of 57ae2ac... jan 31
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="347">
           <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
@@ -1570,6 +1804,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/commentpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1828">
+          <caret line="130" column="56" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
+>>>>>>> parent of 57ae2ac... jan 31
+=======
         <state relative-caret-position="1828">
           <caret line="130" column="56" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
 >>>>>>> parent of 57ae2ac... jan 31
