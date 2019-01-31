@@ -1,7 +1,8 @@
 <%@ page import="uk.ac.dundee.group4.pojo.ExamPaper" %>
 <%@ page import="uk.ac.dundee.group4.pojo.SelectComment" %>
 <%@ page import="java.util.List" %>
-<%@ page import="uk.ac.dundee.group4.pojo.User" %><%--
+<%@ page import="uk.ac.dundee.group4.pojo.User" %>
+<%@ page import="uk.ac.dundee.group4.util.Category" %><%--
   User: xyzniu
   Date: 2019-01-24
   Time: 15:12
@@ -123,6 +124,20 @@
                       style="margin-left: auto; margin-right: auto; width: 100%;"
                       placeholder="Please input your comments..."></textarea>
             <br>
+            <%
+                int sign = (int) request.getAttribute("sign");
+                if (sign == Category.NOTSIGN) {
+            %>
+            <a class="btn btn-warning" href="SignServlet?examPaperId=<%=exam_paper_id%>">Sign</a>
+            <%
+            } else {
+            %>
+
+            <a class="btn btn-warning disabled" href="#">Sign</a>
+            <%
+                }
+            %>
+
             <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
         </form>
         <br>
