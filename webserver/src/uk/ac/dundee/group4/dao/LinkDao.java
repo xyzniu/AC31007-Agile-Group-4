@@ -92,12 +92,10 @@ public class LinkDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            if (ps != null) {
-                try {
-                    ps.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
             try {
                 connection.close();

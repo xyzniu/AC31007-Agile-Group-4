@@ -19,7 +19,7 @@ public class LinkService {
         int type = Link.getLink(u);
         boolean flag = linkDao.selectInOneType(type, examPaperId);
         if (flag) {
-            examPaperDao.changeStage(type, examPaperId);
+            examPaperDao.changeStage(type);
         }
         return linkDao.insertSign(u, examPaperId);
     }

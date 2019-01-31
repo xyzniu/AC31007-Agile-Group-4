@@ -424,34 +424,7 @@ public class ExamPaperDao {
         return list;
     }
 
-    public int changeStage(int type, int examPaperId) {
-        Connection connection = null;
-        PreparedStatement ps = null;
-        int rst = -1;
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
-            String sql = "UPDATE exam_paper SET stage = ? WHERE exam_paper_id=?";
-            ps = connection.prepareStatement(sql);
-            ps.setInt(1, type);
-            ps.setInt(2, examPaperId);
-            rst = ps.executeUpdate();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                ps.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        return rst;
+    public void changeStage(int type) {
+
     }
 }

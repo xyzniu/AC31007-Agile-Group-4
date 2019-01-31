@@ -1,10 +1,7 @@
 <%@ page import="uk.ac.dundee.group4.pojo.ExamPaper" %>
 <%@ page import="uk.ac.dundee.group4.util.Category" %>
 <%@ page import="uk.ac.dundee.group4.pojo.User" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.security.Timestamp" %>
-<%@ page import="java.util.Calendar" %>
-<%@ page import="java.text.SimpleDateFormat" %><%--
+<%@ page import="java.util.List" %><%--
 User: xyzniu
 Date: 2019-01-21
 Time: 17:59
@@ -25,9 +22,9 @@ Time: 17:59
           integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-<%
-    User u = (User) session.getAttribute("user");
-%>
+  <%
+  User u = (User) session.getAttribute("user");
+  %>
 <div id="wrapper" class="toggled">
 
     <!-- Sidebar -->
@@ -52,22 +49,20 @@ Time: 17:59
                 <a href="contact.jsp">Contact Us</a>
             </li>
             <%
-                if (u.getStaffType().equals(Category.LOCAL_EXAMS_OFFICER)) {
-            %>
-            <li>
-                <a href="ShowAllocateServlet">Allocate</a>
-            </li>
-            <%
-                }
-            %>
-            <li>
-                <a href="LogoutServlet">Logout</a>
-            </li>
+    if (u.getStaffType().equals(Category.LOCAL_EXAMS_OFFICER)) {
+%>
+<li>
+    <a href="ShowAllocateServlet">Allocate</a>
+</li>
+<%
+    }
+%>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
+
 
 
     <div id="page-content-wrapper">
@@ -78,19 +73,22 @@ Time: 17:59
             <%
                 if (u.getStaffType().equals(Category.EXAM_SETTER)) {
             %>
-            <a href="addExamSetter.jsp" class="btn btn-primary">Add</a>
-            <br>
-            <br>
-            <%
-                }
-            %>
 
             <!-- button input group start -->
             <div class="input-group mb-3">
-                <input class="form-control" id="myInput" type="text" placeholder="Search..">
-            </div>
+                    <div class="input-group-prepend">
+                            <a href="addExamSetter.jsp" class="btn btn-primary">Add</a>
+                    </div>
+                    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                    <div class="input-group-append">
+                            <a href="LogoutServlet" class="btn btn-danger">Logout</a>
+                </div>
+                </div>
             <!-- /button input group end -->
 
+            <%
+                }
+            %>
 
             <%
                 String msg = (String) request.getAttribute("msg");
@@ -129,7 +127,7 @@ Time: 17:59
                         <th scope="col">Level</th>
                         <th scope="col">Semester</th>
                         <th scope="col">Stage</th>
-                        <th scope="col">Deadline</th>
+                        <th scope="col">Timestamp</th>
                         <th scope="col">Download</th>
                         <th scope="col">Review</th>
                     </tr>
@@ -141,31 +139,28 @@ Time: 17:59
                     %>
                     <tr>
                         <td><%= ++i%>
-                        </td>
                         <td><%= examPaper.getModuleCode()%>
-                        </td>
-                        <%if (!u.getStaffType().equals(Category.EXAM_SETTER)) {%>
+                                <%if (!u.getStaffType().equals(Category.EXAM_SETTER)) {%>
                         <td><%= examPaper.getExamSetter()%>
-                        </td>
-                        <% }%>
+                                <% }%>
+                                <%if(examPaper.getFormat()==Category.ONLINE_EXAM){
+                                %>
+                        <td>Online exam
+                                <%}else{%>
+                        <td>Paper exam
+                                <% } %>
 
-                        <%if (examPaper.getFormat() == Category.ONLINE_EXAM) {%>
-                        <td>Online exam</td>
-                        <%} else {%>
-                        <td>Paper exam</td>
-                        <% } %>
+                                <% if(examPaper.getType()==Category.MAIN_EXAM){  %>
+                        <td>Main exam
+                                <%}else{%>
+                        <td>Resit Exam
+                                <% } %>
 
-                        <% if (examPaper.getType() == Category.MAIN_EXAM) { %>
-                        <td>Main exam</td>
-                        <%} else {%>
-                        <td>Resit Exam</td>
-                        <% } %>
-
-                        <% if (examPaper.getLevel() == Category.UNDERGRADUATE_EXAM) { %>
-                        <td>Undergraduate exam</td>
-                        <%} else {%>
-                        <td>Postgraduate Exam</td>
-                        <% } %>
+                                <% if(examPaper.getLevel()==Category.UNDERGRADUATE_EXAM){ %>
+                        <td>Undergraduate exam
+                                <%}else{%>
+                        <td>Postgraduate Exam
+                                <% } %>
 
                         <!-- placeholder -->
                         <td>Semester 1</td>
@@ -185,26 +180,9 @@ Time: 17:59
                                 }
                             %>
                             <%=str%>
-                            </a></td>
-                        <%
-                            java.sql.Timestamp t = examPaper.getTimestamp();
-                            Calendar c = Calendar.getInstance();
-                            int week = 0;
-                            switch (u.getStaffType()) {
-                                case Category.INTERNAL_MODERATOR:
-                                    week = 1;
-                                    break;
-                                case Category.EXAM_VETTING_COMMITTEE:
-                                    week = 2;
-                                    break;
-                                case Category.EXTERNAL_EXAMINER:
-                                    week = 3;
-                                    break;
-                            }
-                            c.add(Calendar.WEEK_OF_MONTH, week);
-                        %>
-                        <td><%= c.getTime()%>
-                            </a></td>
+                        </a></td>
+                        <td><%= examPaper.getTimestamp()%>
+                        </a></td>
                         <%
                             switch (u.getStaffType()) {
                                 case Category.EXAM_SETTER:
@@ -221,15 +199,15 @@ Time: 17:59
                                 break;
                             case Category.INTERNAL_MODERATOR:
                                 if (examPaper.getStage() != Category.TO_SIGN_BY_INTERNAL_MODERATOR) {
-                        %>
-                        <td style="text-align: center;">
-                            <a class="btn btn-primary disabled" href="#">download</a>
-                        </td>
-                        <td style="text-align: center;">
-                            <a class="btn btn-warning disabled" href="#">Review</a>
-                        </td>
-                        <%
-                        } else {
+                                    %>
+                                    <td style="text-align: center;">
+                                        <a class="btn btn-primary disabled" href="#">download</a>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <a class="btn btn-warning disabled" href="#">Review</a>
+                                    </td>
+                                    <%
+                                } else {
                         %>
                         <td style="text-align: center;">
                             <a class="btn btn-primary" href="DownloadServlet?examPaperId=<%=examPaper.getId()%>">download</a>
@@ -306,19 +284,18 @@ Time: 17:59
         });
     </script>
     <script>
-        $(document).ready(function () {
-            $("#myInput").on("keyup", function () {
+            $(document).ready(function(){
+              $("#myInput").on("keyup", function() {
                 var value = $(this).val().toLowerCase();
-                $("#myTable tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                $("#myTable tr").filter(function() {
+                  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                 });
+              });
             });
-        });
-    </script>
+            </script>
 
     <!--/scripts-->
 
 
 </body>
 </html>
-                                            
