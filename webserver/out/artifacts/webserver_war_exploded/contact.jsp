@@ -25,6 +25,16 @@
                 <li><a href="ListExamPaperServlet">Archive</a></li>
                 <li><a href="about.jsp">About</a></li>
                 <li><a href="contact.jsp">Contact Us</a></li>
+                <%
+                if (u.getStaffType().equals(Category.LOCAL_EXAMS_OFFICER)) {
+                    %>
+                    <li><a href="ShowAllocateServlet">Allocate</a></li>
+                    <%
+                }
+                %>
+                <li>
+                        <a href="LogoutServlet">Logout</a>
+                    </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->

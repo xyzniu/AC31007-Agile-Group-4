@@ -42,6 +42,9 @@
             <li>
                 <a href="contact.jsp">Contact Us</a>
             </li>
+            <li>
+                <a href="LogoutServlet">Logout</a>
+            </li>
         </ul>
     </div>
     <!-- /#sidebar-wrapper -->

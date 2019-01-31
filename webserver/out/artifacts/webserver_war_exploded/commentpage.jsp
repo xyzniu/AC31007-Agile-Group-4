@@ -73,6 +73,7 @@
                         <th scope="col">Comments ID</th>
                         <th scope="col">Uploader</th>
                         <th scope="col">Comment(s)</th>
+                        <th scope="col">Download</th>
 
                     </tr>
                     </thead>
@@ -89,10 +90,22 @@
                         </td>
                         <td><%=comment.getComments()%>
                         </td>
+                        <%
+                            if (comment.getVersion_id() == -1) {
+                        %>
+                        <td style="text-align: center;">
+                        </td>
+                        <%
+                        } else {
+                        %>
                         <td style="text-align: center;">
                             <a class="btn btn-primary"
                                href="DownloadCommentFileServlet?versionId=<%=comment.getVersion_id()%>&exampaperId=<%=exam_paper_id%>">download</a>
                         </td>
+                        <%
+                            }
+                        %>
+
                     </tr>
 
                     <%

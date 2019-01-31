@@ -6,7 +6,27 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfacffb9-951a-4904-afe1-82654e2f1c64" name="Default Changelist" comment="" />
+    <list default="true" id="cfacffb9-951a-4904-afe1-82654e2f1c64" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/ExamPaperDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/ExamPaperDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/LinkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/LinkDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/LinkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/LinkService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/about.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/addExamSetter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/addExamSetter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/allocating.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/allocating.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/allocatingList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/allocatingList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/commentpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/commentpage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/contact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/listAllExamPapers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/listAllExamPapers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/ExamPaperDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/ExamPaperDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/LinkDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/LinkDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/LinkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/LinkService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/commentpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/commentpage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/listAllExamPapers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/listAllExamPapers.jsp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,27 +40,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/CommentFileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="914">
-              <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getConnection#0;class#LinkDao#0" />
-                <element signature="method#selectSign#0;class#LinkDao#0" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SignServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="208">
+              <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/SelectCommentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/commentpage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -48,85 +78,63 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/listAllExamPapers.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1421">
-              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/commentpage1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1767">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="316">
+              <caret line="203" column="62" selection-start-line="203" selection-start-column="62" selection-end-line="203" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/commentpage.jsp">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1828">
-              <caret line="130" column="56" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="153">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <element signature="method#selectAll#0;class#CommentDao#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#selectStaff#0;class#UserDao#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1762">
-              <caret line="427" selection-start-line="427" selection-end-line="427" />
+            <state relative-caret-position="-110">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1197">
+              <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
               <folding>
-                <element signature="method#selectByExamSetter#0;class#ExamPaperDao#0" />
-                <element signature="method#insertOne#0;class#ExamPaperDao#0" />
-                <element signature="method#selectByExamPaperId#0;class#ExamPaperDao#0" />
-                <element signature="method#selectAll#0;class#ExamPaperDao#0" />
+                <element signature="e#1811#1812#0" expanded="true" />
+                <element signature="e#1844#1845#0" expanded="true" />
+                <element signature="e#1893#1894#0" expanded="true" />
+                <element signature="e#1937#1938#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/CommentServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="24" column="57" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="57" />
+            <state relative-caret-position="119">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ShowAllocateServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+            <state relative-caret-position="95">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -152,6 +160,8 @@
       <find>link_table</find>
       <find>DownloadCommentFileServlet</find>
       <find>disabled</find>
+      <find>insert</find>
+      <find>timestamp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ShowAllocateServlet.java" />
         <option value="$PROJECT_DIR$/web/allocating.jsp" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/AllocatingServlet.java" />
-        <option value="$PROJECT_DIR$/web/listAllExamPapers.jsp" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java" />
@@ -205,12 +214,13 @@
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Link.java" />
         <option value="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/LinkDaoTest.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java" />
-        <option value="$PROJECT_DIR$/web/commentpage.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SignServlet.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" />
+        <option value="$PROJECT_DIR$/web/commentpage.jsp" />
+        <option value="$PROJECT_DIR$/web/listAllExamPapers.jsp" />
       </list>
     </option>
   </component>
@@ -221,10 +231,11 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="73" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="801" />
+    <option name="width" value="1367" />
+    <option name="height" value="798" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -234,6 +245,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -264,6 +277,13 @@
               <item name="webserver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="group4" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="group4" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -272,31 +292,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="group4" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group4" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webserver" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webserver" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-              <item name="group4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webserver" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-              <item name="group4" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
@@ -313,14 +308,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548942460579" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548946653049" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -330,15 +323,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet" />
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/upload" />
-      <recent name="$PROJECT_DIR$/src/uk/ac/dundee/group4/service" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet" />
+      <recent name="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/upload" />
+      <recent name="$PROJECT_DIR$/src/uk/ac/dundee/group4/service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -594,6 +587,7 @@
       <workItem from="1548866263211" duration="2174000" />
       <workItem from="1548932616320" duration="2985000" />
       <workItem from="1548936874031" duration="3919000" />
+      <workItem from="1548942418172" duration="3835000" />
     </task>
     <servers />
   </component>
@@ -630,13 +624,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90330000" />
+    <option name="totallyTimeSpent" value="94165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="798" extended-state="6" />
+    <frame x="73" y="23" width="1367" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4885321" visible="true" weight="0.25277779" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4885321" weight="0.25277779" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -645,8 +639,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" sideWeight="0.5114679" side_tool="true" weight="0.25277779" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978479" weight="0.29848692" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3287483" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978479" weight="0.29711142" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39752406" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -687,27 +681,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UpdateCommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DeleteCommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadExamPaperServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -759,13 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ShowAllocateServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/AllocatingServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
@@ -794,18 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="231" column="34" lean-forward="true" selection-start-line="231" selection-start-column="34" selection-end-line="231" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#selectByUsernamePasswordAndType#0;class#UserDao#0" />
-            <element signature="method#selectStaff#0;class#UserDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -823,9 +777,6 @@
           <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/showComments.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/addCommentFile.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -891,30 +842,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-          <folding>
-            <element signature="e#1811#1812#0" expanded="true" />
-            <element signature="e#1844#1845#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="23" column="81" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -925,27 +856,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/allocating.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/allocatingList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1064">
           <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentFileDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="method#selectBycommentFileId#0;class#CommentFileDao#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -966,20 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/CommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/SelectCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
@@ -987,87 +887,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="36" column="66" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/listAllExamPapers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1421">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SignServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="570">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="24" column="57" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1762">
-          <caret line="427" selection-start-line="427" selection-end-line="427" />
-          <folding>
-            <element signature="method#selectByExamSetter#0;class#ExamPaperDao#0" />
-            <element signature="method#insertOne#0;class#ExamPaperDao#0" />
-            <element signature="method#selectByExamPaperId#0;class#ExamPaperDao#0" />
-            <element signature="method#selectAll#0;class#ExamPaperDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getConnection#0;class#LinkDao#0" />
-            <element signature="method#selectSign#0;class#LinkDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-          <folding>
-            <element signature="method#selectAll#0;class#CommentDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1079,10 +904,170 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/insertComment.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/show.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/allocating.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="method#selectAll#0;class#CommentDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/LinkDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getConnection#0;class#LinkDao#0" />
+            <element signature="method#selectSign#0;class#LinkDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/LinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-181">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="13" />
+          <folding>
+            <element signature="method#selectByExamSetter#0;class#ExamPaperDao#0" />
+            <element signature="method#selectByExamPaperId#0;class#ExamPaperDao#0" />
+            <element signature="method#selectAll#0;class#ExamPaperDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/showComments.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentFileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/CommentFileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding>
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1844#1845#0" expanded="true" />
+            <element signature="e#1893#1894#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/CommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ShowAllocateServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/SelectCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/commentpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1828">
-          <caret line="130" column="56" selection-start-line="130" selection-start-column="56" selection-end-line="130" selection-end-column="56" />
+        <state relative-caret-position="172">
+          <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/listAllExamPapers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="203" column="62" selection-start-line="203" selection-start-column="62" selection-end-line="203" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#selectStaff#0;class#UserDao#0" />
+          </folding>
         </state>
       </provider>
     </entry>
