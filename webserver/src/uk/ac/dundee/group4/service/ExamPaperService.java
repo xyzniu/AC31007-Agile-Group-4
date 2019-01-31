@@ -71,7 +71,6 @@ public class ExamPaperService {
 
     }
 
-<<<<<<< HEAD
     /**
      * querying url by exam paper id
      *
@@ -79,7 +78,6 @@ public class ExamPaperService {
      * @return
      */
 
-=======
     public List<ExamPaper> selectToAllocate() {
         return dao.selectToAllocate();
     }
@@ -87,5 +85,5 @@ public class ExamPaperService {
     public List<HashSet<Integer>> selectLinkByExamPaperID(int id) {
         return dao.selectLinkByExamPaperID(id);
     }
->>>>>>> niu2
+
 }

@@ -15,7 +15,7 @@ public class CommentDaoTest {
     @Test
     public void insertCommentTest() {
         InsertCommentDao insertCommentDao = new InsertCommentDao();
-        insertCommentDao.InsertComment("comment", "1", "1", Category.EXAM_SETTER);
+        // insertCommentDao.InsertComment("comment", "1", "1", Category.EXAM_SETTER);
     }
 
     @Test

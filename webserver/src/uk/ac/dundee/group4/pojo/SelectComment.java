@@ -10,6 +10,7 @@ public class SelectComment {
     private String exam_paper_id;
     private String user_id;
     private String staff_type;
+    private int version_id;
 
     public SelectComment() {
     }
@@ -54,6 +55,7 @@ public class SelectComment {
     public String getComments() {
         return comments;
     }
+
     public String getCommentsbyId(int comment_id) {
 
         return comments;
@@ -73,5 +75,13 @@ public class SelectComment {
 
     public void setStaff_type(String staff_type) {
         this.staff_type = staff_type;
+    }
+
+    public int getVersion_id() {
+        return version_id;
+    }
+
+    public void setVersion_id(int version_id) {
+        this.version_id = version_id;
     }
 }

@@ -112,18 +112,25 @@ public class VersionDao {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
-            String sql = "Select version where version_ID=?";
+            String sql = "Select * from version where version_ID=?";
             ps = connection.prepareStatement(sql);
             ps.setInt(1, versionId);
             rs = ps.executeQuery();
             while (rs.next()) {
-                ResultUrl = rs.getString("url");
+                ResultUrl = rs.getString("version_URL");
             }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            if (rs!=null){
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
             try {
                 ps.close();
             } catch (SQLException e) {

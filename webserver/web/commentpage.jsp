@@ -80,8 +80,6 @@
                     <%
                         int i = 0;
                         for (SelectComment comment : comments) {
-
-
                     %>
                     <tr>
                         <td><%=++i%>
@@ -89,6 +87,10 @@
                         <td><%=comment.getUser_id()%>
                         </td>
                         <td><%=comment.getComments()%>
+                        </td>
+                        <td style="text-align: center;">
+                            <a class="btn btn-primary"
+                               href="DownloadCommentFileServlet?versionId=<%=comment.getVersion_id()%>&exampaperId=<%=exam_paper_id%>">download</a>
                         </td>
                     </tr>
 
@@ -101,33 +103,31 @@
         </div>
 
 
-
     </div>
 
     <div style="padding-left: 35px; padding-right: 35px;">
-    <form action="InsertCommentServlet" method="post">
-        <input type="hidden" name="user_id" value="<%=u.getId()%>"/>
-        <input type="hidden" name="exam_paper_id" value="<%=exam_paper_id%>"/>
-        <input type="hidden" name="staff_type" value="<%=u.getStaffType()%>"/>
-        <label>Upload a copy of this exam with your annotations (required):</label>
-        <div class="custom-file" style="width: 100%">
+        <form action="InsertCommentFileServlet" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="user_id" value="<%=u.getId()%>"/>
+            <input type="hidden" name="exam_paper_id" value="<%=exam_paper_id%>"/>
+            <input type="hidden" name="staff_type" value="<%=u.getStaffType()%>"/>
+            <label>Upload a copy of this exam with your annotations (required):</label>
+            <div class="custom-file" style="width: 100%">
                 <label class="custom-file-label" for="customFile">Choose a file to upload:</label>
-                    <input type="file" class="custom-file-input" id="customFile" name="commentfile"/>
+                <input type="file" class="custom-file-input" id="customFile" name="commentfile"/>
 
-                </div>
-                <br>
-                <br>
-                <label>Add comments with this upload (required):</label>
-        <textarea name="textfield3" class="form-control" rows="5" style="margin-left: auto; margin-right: auto; width: 100%;"
-                  placeholder="Please input your comments..."></textarea>
+            </div>
+            <br>
+            <br>
+            <label>Add comments with this upload (required):</label>
+            <textarea name="comment" class="form-control" rows="5"
+                      style="margin-left: auto; margin-right: auto; width: 100%;"
+                      placeholder="Please input your comments..."></textarea>
+            <br>
+            <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
+        </form>
         <br>
-        <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
-    </form>
-    <br>
-    <br>
+        <br>
     </div>
-
-
 
 
     <!-- /#page-content-wrapper -->

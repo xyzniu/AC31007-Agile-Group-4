@@ -55,6 +55,9 @@ Time: 13:45
             <li>
                 <a href="ShowAllocateServlet">Allocate</a>
             </li>
+            <li>
+                <a href="ShowAllocateServlet">Setting up</a>
+            </li>
             <%
                 }
             %>

@@ -21,7 +21,7 @@ public class InsertCommentDao {
      * @param version_id
      * @return
      */
-    public int InsertComment(String comment, String exam_paper_id, String user_id, String staff_type,String version_id) {
+    public int InsertComment(String comment, String exam_paper_id, String user_id, String staff_type,int version_id) {
 
         Connection conn = null;
         PreparedStatement ps = null;
@@ -38,7 +38,7 @@ public class InsertCommentDao {
             ps.setString(2, user_id);
             ps.setString(3, exam_paper_id);
             ps.setString(4, staff_type);
-            ps.setString(5, version_id);
+            ps.setInt(5, version_id);
             rst = ps.executeUpdate();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

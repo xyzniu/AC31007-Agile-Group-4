@@ -14,6 +14,7 @@ public class SelectCommentDao {
 
     /**
      * querying comments by exam paper id
+     *
      * @param exam_paper_id
      * @return
      */
@@ -42,6 +43,7 @@ public class SelectCommentDao {
                 c.setUser_id(rs.getString(3));
                 c.setExam_paper_id(rs.getString(4));
                 c.setStaff_type(rs.getString(5));
+                c.setVersion_id(rs.getInt(6));
 
                 // get user name by querying different tables
                 // store user name in c.user_id()

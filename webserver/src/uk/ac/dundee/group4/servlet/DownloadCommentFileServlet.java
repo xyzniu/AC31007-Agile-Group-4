@@ -18,7 +18,6 @@ public class DownloadCommentFileServlet extends HttpServlet {
     VersionService versionService = new VersionService();
 
 
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String commentId = request.getParameter("versionId");
         String exampaperId = request.getParameter("exampaperId");

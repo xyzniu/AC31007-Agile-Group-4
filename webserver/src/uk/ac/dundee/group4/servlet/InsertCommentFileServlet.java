@@ -8,6 +8,7 @@ import uk.ac.dundee.group4.pojo.ExamPaper;
 import uk.ac.dundee.group4.pojo.User;
 import uk.ac.dundee.group4.pojo.Version;
 import uk.ac.dundee.group4.service.ExamPaperService;
+import uk.ac.dundee.group4.service.InsertCommentService;
 import uk.ac.dundee.group4.service.VersionService;
 import uk.ac.dundee.group4.util.Category;
 
@@ -25,12 +26,19 @@ import java.util.List;
 
 public class InsertCommentFileServlet extends HttpServlet {
     VersionService versionService = new VersionService();
+    InsertCommentService insertCommentService = new InsertCommentService();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ExamPaper examPaper = new ExamPaper();
-        String path = null;
+        String path = "";
 
-        try{
+        String comment = null;
+        String exam_paper_id = null;
+        String user_id = null;
+        String staff_type = null;
+        String version_id = null;
+
+        try {
             DiskFileItemFactory factory = new DiskFileItemFactory();
             ServletFileUpload upload = new ServletFileUpload(factory);
             if (!ServletFileUpload.isMultipartContent(request)) {
@@ -44,52 +52,56 @@ public class InsertCommentFileServlet extends HttpServlet {
                     String name = item.getFieldName();
                     String value = item.getString();
                     switch (name) {
-                        case "id":
-                            System.out.println("id");
-                        case "version":
-                            System.out.println("version");
+
+                        case "comment":
+                            comment = value;
+                            break;
+                        case "exam_paper_id":
+                            exam_paper_id = value;
+                            break;
+                        case "user_id":
+                            user_id = value;
+                            break;
+                        case "staff_type":
+                            staff_type = value;
+                            break;
+                        case "version_id":
+                            version_id = value;
+                            break;
                         default:
                             System.out.println("No such field.");
                     }
-                }else {
+                } else {
                     // if item is a file
                     path = storeItem(item);
-                    System.out.println(path);
                 }
             }
 
-        }catch (FileUploadException e) {
+        } catch (FileUploadException e) {
             e.printStackTrace();
         }
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-        examPaper.setExamSetterId(user.getId());
-        examPaper.setTimestamp(new Timestamp(System.currentTimeMillis()));
 
-        // create a new version
-        Version v = new Version();
-        v.setUrl(path);
-        v.setUploaderId(user.getId());
-        v.setTimestamp(new Timestamp(System.currentTimeMillis()));
-        // changed for code reusable
-        v.setStage(Category.TO_SIGN_BY_INTERNAL_MODERATOR);
-        v.setExamPaperId(-1);
-
-        int versionId = versionService.insertOne(v);
-        if (versionId > 0) {
-            examPaper.setLatestVersion(versionId);
-            String examPaperId = request.getParameter("examPaperId");
-            int examPaperIdint = Integer.parseInt(examPaperId);
-            if(user.getStaffType()=="ExamSetter") {
-                versionService.updateExamPaperId(versionId, examPaperIdint);
-            }
-            request.setAttribute("msg", "Success!");
-            request.getRequestDispatcher("ListExamPaperServlet").forward(request, response);
-        } else {
-            // back with message
-            request.setAttribute("msg", "Error when add files!");
-            request.getRequestDispatcher("ListExamPaperServlet").forward(request, response);
+        int versionId = -1;
+        // if there is a file
+        if (path != null && path.length() > 0) {
+            // create a new version
+            Version v = new Version();
+            v.setUrl(path);
+            v.setUploaderId(user.getId());
+            v.setTimestamp(new Timestamp(System.currentTimeMillis()));
+            // changed for code reusable
+            v.setStage(Category.TO_SIGN_BY_INTERNAL_MODERATOR);
+            v.setExamPaperId(Integer.parseInt(exam_paper_id));
+            versionId = versionService.insertOne(v);
         }
+
+
+        // insert comment
+        insertCommentService.insertComment(comment, exam_paper_id, user_id, staff_type, versionId);
+        request.getRequestDispatcher("SelectCommentServlet?exam_paper_id=" + exam_paper_id).forward(request, response);
+
     }
 
     private String storeItem(FileItem item) throws IOException {
@@ -105,7 +117,7 @@ public class InsertCommentFileServlet extends HttpServlet {
         }
         String fileFormat = filename.substring(filename.lastIndexOf("."));
         InputStream in = item.getInputStream();
-        String path =  "_" + System.currentTimeMillis() + fileFormat;
+        String path = "_" + System.currentTimeMillis() + fileFormat;
         FileOutputStream out = new FileOutputStream(savePath + "/" + path);
         // save
         byte buffer[] = new byte[1024];

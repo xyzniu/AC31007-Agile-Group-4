@@ -108,6 +108,15 @@
         <servlet-class>uk.ac.dundee.group4.servlet.SelectCommentServlet</servlet-class>
     </servlet>
 
+    <servlet-mapping>
+        <servlet-name>InsertCommentFileServlet</servlet-name>
+        <url-pattern>/InsertCommentFileServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InsertCommentFileServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.InsertCommentFileServlet</servlet-class>
+    </servlet>
+
     <servlet>
         <servlet-name>AllocatingServlet</servlet-name>
         <servlet-class>uk.ac.dundee.group4.servlet.AllocatingServlet</servlet-class>
@@ -125,6 +134,16 @@
     <servlet-mapping>
         <servlet-name>ShowAllocateServlet</servlet-name>
         <url-pattern>/ShowAllocateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DownloadCommentFileServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.DownloadCommentFileServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DownloadCommentFileServlet</servlet-name>
+        <url-pattern>/DownloadCommentFileServlet</url-pattern>
     </servlet-mapping>
 
 </web-app>

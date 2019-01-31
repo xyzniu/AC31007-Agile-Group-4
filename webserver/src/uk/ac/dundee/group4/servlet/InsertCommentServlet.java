@@ -26,13 +26,14 @@ public class InsertCommentServlet extends HttpServlet {
      * @throws IOException
      */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String comment = request.getParameter("comment");
+        /*String comment = request.getParameter("comment");
         String exam_paper_id = request.getParameter("exam_paper_id");
         String user_id = request.getParameter("user_id");
         String staff_type = request.getParameter("staff_type");
         String version_id = request.getParameter("version_id");
+        int versionI
         insertCommentService.insertComment(comment, exam_paper_id, user_id, staff_type, version_id);
-        request.getRequestDispatcher("SelectCommentServlet").forward(request, response);
+        request.getRequestDispatcher("SelectCommentServlet").forward(request, response);*/
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

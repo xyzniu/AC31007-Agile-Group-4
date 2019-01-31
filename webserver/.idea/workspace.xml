@@ -7,47 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cfacffb9-951a-4904-afe1-82654e2f1c64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/AllocatingServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ShowAllocateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/allocating.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/allocatingList.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SignServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/ExamPaperDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/ExamPaperDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/ExamPaperDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/ExamPaperDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/pojo/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/pojo/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/InsertCommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/InsertCommentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/SelectCommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/SelectCommentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/VersionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/dao/VersionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/pojo/SelectComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/pojo/SelectComment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/ExamPaperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/ExamPaperService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/util/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/util/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/InsertCommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/InsertCommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/VersionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/service/VersionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/servlet/DownloadExamPaperServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/servlet/DownloadExamPaperServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/servlet/InsertCommentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/classes/uk/ac/dundee/group4/servlet/InsertCommentServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/about.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/addExamSetter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/addExamSetter.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/commentpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/commentpage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/contact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/listAllExamPapers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/listAllExamPapers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/ExamPaperDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/ExamPaperDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/pojo/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/pojo/Comment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/commentpage11.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/commentpage11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/InsertCommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/InsertCommentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/SelectCommentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/SelectCommentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/VersionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/dao/VersionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/pojo/SelectComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/pojo/SelectComment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/ExamPaperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/ExamPaperService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/util/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/util/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/InsertCommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/InsertCommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/VersionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/service/VersionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/servlet/DownloadExamPaperServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/servlet/DownloadExamPaperServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/servlet/InsertCommentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webserver/uk/ac/dundee/group4/servlet/InsertCommentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/webserver/uk/ac/dundee/group4/dao/CommentDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/webserver/uk/ac/dundee/group4/dao/CommentDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadCommentFileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadCommentFileServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentFileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentFileServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/about.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/about.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/addExamSetter.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/addExamSetter.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/allocatingList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/allocatingList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/commentpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/commentpage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/commentpage11.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/commentpage11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/contact.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/listAllExamPapers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/listAllExamPapers.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,14 +57,41 @@
     <SUITE FILE_PATH="coverage/webserver$Tomcat_9_0_12.ic" NAME="Tomcat 9.0.12 Coverage Results" MODIFIED="1548703222545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/commentpage11.html">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadCommentFileServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="114" column="14" lean-forward="true" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
+            <state relative-caret-position="234">
+              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/allocating.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/allocatingList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-564">
+              <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SignServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#td#0;n#form#0;n#SelectComment#0;n#SelectComment#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,8 +102,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,6 +116,7 @@
       <find>%&gt;</find>
       <find>review</find>
       <find>link_table</find>
+      <find>DownloadCommentFileServlet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,23 +125,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/contact.jsp" />
-        <option value="$PROJECT_DIR$/web/about.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/commentpage1.jsp" />
         <option value="$PROJECT_DIR$/web/commentpage2.jsp" />
         <option value="$PROJECT_DIR$/web/index2.jsp" />
-        <option value="$PROJECT_DIR$/web/commentpage.jsp" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/util/DBInfo.java" />
-        <option value="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentDaoTest.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/AddExamPaperServlet.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentServlet.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ListExamPaperServlet.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadExamPaperServlet.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/SelectCommentService.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UpdateCommentService.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/CommentService.java" />
@@ -124,32 +142,39 @@
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/VersionService.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/Comment.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/ExamPaper.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/Version.java" />
         <option value="$PROJECT_DIR$/Test/uk/ac/dundee/group4/util/CategoryTest.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/DeleteCommentDao.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UpdateCommentDao.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/CommentServlet.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DeleteCommentServlet.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/UpdateCommentServlet.java" />
-        <option value="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/ExamPaperDaoTest.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UserService.java" />
         <option value="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/UserDaoTest.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/allocatingList.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ShowAllocateServlet.java" />
-        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java" />
         <option value="$PROJECT_DIR$/web/allocating.jsp" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/ExamPaperDao.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/AllocatingServlet.java" />
         <option value="$PROJECT_DIR$/web/listAllExamPapers.jsp" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/util/Category.java" />
         <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java" />
+        <option value="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentFileServlet.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java" />
+        <option value="$PROJECT_DIR$/web/commentpage.jsp" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadCommentFileServlet.java" />
+        <option value="$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java" />
+        <option value="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentTest.java" />
+        <option value="$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/ExamPaperDaoTest.java" />
         <option value="$PROJECT_DIR$/web/allocatingList.jsp" />
       </list>
     </option>
@@ -174,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,28 +222,7 @@
               <item name="webserver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="group4" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group4" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group4" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="group4" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webserver" type="b2602c69:ProjectViewProjectNode" />
@@ -255,12 +258,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548778484687" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548868423951" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -274,9 +278,9 @@
       <recent name="$PROJECT_DIR$/web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet" />
       <recent name="$PROJECT_DIR$/web" />
       <recent name="$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/upload" />
-      <recent name="$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet" />
       <recent name="$PROJECT_DIR$/src/uk/ac/dundee/group4/service" />
       <recent name="$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo" />
     </key>
@@ -548,7 +552,8 @@
       <workItem from="1548363133404" duration="7032000" />
       <workItem from="1548409292103" duration="628000" />
       <workItem from="1548434408118" duration="1154000" />
-      <workItem from="1548768703815" duration="5866000" />
+      <workItem from="1548768703815" duration="10655000" />
+      <workItem from="1548866263211" duration="2174000" />
     </task>
     <servers />
   </component>
@@ -585,23 +590,23 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76463000" />
+    <option name="totallyTimeSpent" value="83426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="798" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48968363" visible="true" weight="0.25277779" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4885321" visible="true" weight="0.25277779" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.5103164" side_tool="true" weight="0.30416667" />
+      <window_info id="Web" order="7" sideWeight="0.5114679" side_tool="true" weight="0.25277779" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978479" visible="true" weight="0.29711142" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978479" weight="0.4002751" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39807162" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -610,7 +615,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5021521" side_tool="true" weight="0.42520776" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3292011" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3287483" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -642,90 +647,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/util/DBInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-          <folding>
-            <element signature="method#SelectComment#0;class#SelectCommentDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/CommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/DeleteCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/SelectCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/UpdateCommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/VersionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/AddExamPaperServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="128" column="73" lean-forward="true" selection-start-line="128" selection-start-column="73" selection-end-line="128" selection-end-column="73" />
-          <folding>
-            <element signature="method#doPost#0;class#AddExamPaperServlet#0" />
-            <element signature="method#storeItem#0;class#AddExamPaperServlet#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -756,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/ExamPaper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -774,13 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -812,16 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="102" selection-start-line="22" selection-start-column="102" selection-end-line="22" selection-end-column="102" />
-          <folding>
-            <element signature="method#InsertComment#0;class#InsertCommentDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/Version.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-42">
@@ -833,22 +730,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/ExamPaperDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/about.jsp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/commentpage1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/contact.jsp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -867,32 +750,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/addExamSetter.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/UserDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="121" column="59" lean-forward="true" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="method#selectAll#0;class#CommentDao#0" />
           </folding>
         </state>
       </provider>
@@ -907,28 +770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="78" column="31" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
-          <folding>
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1818#1819#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/ShowAllocateServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/allocating.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -942,23 +787,9 @@
     <entry file="file://$PROJECT_DIR$/web/updateComment.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/listAllExamPapers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/commentpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1995">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/webserver_war_exploded/WEB-INF/upload/Ac12038_1548431232392.txt">
@@ -978,24 +809,6 @@
           <folding>
             <element signature="method#UpdateComment#0;class#UpdateCommentDao#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
-          <folding>
-            <element signature="method#insertOne#0;class#VersionDao#0" />
-            <element signature="method#updateExamPaperId#0;class#VersionDao#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/allocatingList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="88" column="12" lean-forward="true" selection-start-line="88" selection-start-column="12" selection-end-line="88" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1024,12 +837,205 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/ExamPaperService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/commentpage1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/service/InsertCommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SelectCommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/showComments.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addCommentFile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/addExamSetter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/commentpage11.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="114" column="14" lean-forward="true" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
+        <state relative-caret-position="194">
+          <caret line="91" selection-start-line="91" selection-end-line="93" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#0;n#td#0;n#form#0;n#SelectComment#0;n#SelectComment#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2812">
+          <caret line="148" column="10" lean-forward="true" selection-start-line="148" selection-start-column="10" selection-end-line="148" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/listAllExamPapers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4503">
+          <caret line="237" column="73" selection-start-line="237" selection-start-column="61" selection-end-line="237" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/InsertCommentFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="86" column="29" selection-start-line="86" selection-start-column="29" selection-end-line="86" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/ExamPaperDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/uk/ac/dundee/group4/dao/CommentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/VersionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="114" column="68" lean-forward="true" selection-start-line="114" selection-start-column="68" selection-end-line="114" selection-end-column="68" />
+          <folding>
+            <element signature="method#insertOne#0;class#VersionDao#0" />
+            <element signature="method#updateExamPaperId#0;class#VersionDao#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/pojo/SelectComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding>
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1844#1845#0" expanded="true" />
+            <element signature="e#1893#1894#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/InsertCommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="23" column="81" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/SelectCommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/dao/CommentFileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/commentpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="92" column="73" selection-start-line="92" selection-start-column="73" selection-end-line="92" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/DownloadCommentFileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/allocating.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/allocatingList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-564">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/uk/ac/dundee/group4/servlet/SignServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
