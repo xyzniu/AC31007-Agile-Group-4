@@ -145,5 +145,15 @@
         <servlet-name>DownloadCommentFileServlet</servlet-name>
         <url-pattern>/DownloadCommentFileServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SignServlet</servlet-name>
+        <servlet-class>uk.ac.dundee.group4.servlet.SignServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>SignServlet</servlet-name>
+        <url-pattern>/SignServlet</url-pattern>
+    </servlet-mapping>
 
 </web-app>

@@ -105,4 +105,48 @@ public class LinkDao {
         }
         return rst;
     }
+
+    public boolean selectInOneType(int type, int examPaperId) {
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        boolean flag = true;
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            String sql = "SELECT * FROM link_table WHERE exam_paper_ID=? AND link_control=?";
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, examPaperId);
+            ps.setInt(2, type);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                if (rs.getInt("sign") == 0) {
+                    flag = false;
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return flag;
+    }
 }

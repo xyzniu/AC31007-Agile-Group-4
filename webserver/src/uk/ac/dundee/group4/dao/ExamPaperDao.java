@@ -423,4 +423,8 @@ public class ExamPaperDao {
         }
         return list;
     }
+
+    public void changeStage(int type) {
+
+    }
 }
