@@ -26,7 +26,9 @@ public class InsertCommentDao {
         Connection conn = null;
         PreparedStatement ps = null;
         int rst = -1;
-
+/**
+ * insert the comments factors and do the text
+ */
 
         try {
             Class.forName("com.mysql.jdbc.Driver");

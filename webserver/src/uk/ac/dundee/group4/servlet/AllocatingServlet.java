@@ -15,11 +15,19 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
 
+
 @WebServlet(name = "AllocatingServlet")
 public class AllocatingServlet extends HttpServlet {
     UserService userService = new UserService();
     ExamPaperService examPaperService = new ExamPaperService();
 
+    /**
+     * Allocating different roles to list of exams
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String[] internalModerators = request.getParameterValues(Category.INTERNAL_MODERATOR);
         String[] committeeMembers = request.getParameterValues(Category.EXAM_VETTING_COMMITTEE);

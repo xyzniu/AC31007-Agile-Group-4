@@ -17,6 +17,13 @@ import java.io.OutputStream;
 public class DownloadCommentFileServlet extends HttpServlet {
     VersionService versionService = new VersionService();
 
+    /**
+     * get the exam paperId and commentId
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String commentId = request.getParameter("versionId");
@@ -28,6 +35,16 @@ public class DownloadCommentFileServlet extends HttpServlet {
             download(request, response, url,exampaperId);
         }
     }
+
+    /**
+     * This is the servlet dealing with downloading comment file
+     * @param request
+     * @param response
+     * @param url
+     * @param exampaperId
+     * @throws IOException
+     * @throws ServletException
+     */
 
     private void download(HttpServletRequest request, HttpServletResponse response, String url, String exampaperId) throws IOException, ServletException {
         String fileSaveRootPath = this.getServletContext().getRealPath("/WEB-INF/upload");
