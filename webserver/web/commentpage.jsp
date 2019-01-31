@@ -6,10 +6,10 @@
   User: xyzniu
   Date: 2019-01-24
   Time: 15:12
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
+  --%>
+  <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+  <html>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -20,84 +20,84 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
-<div id="wrapper" class="toggled">
+    <div id="wrapper" class="toggled">
 
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <li class="sidebar-brand">
-                <a href="ListExamPaperServlet">
-                    Exam Work Flow System
-                </a>
-            </li>
-            <li>
-                <a href="ListExamPaperServlet">Dashboard</a>
-            </li>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="ListExamPaperServlet">
+                        Exam Work Flow System
+                    </a>
+                </li>
+                <li>
+                    <a href="ListExamPaperServlet">Dashboard</a>
+                </li>
 
-            <li>
-                <a href="ListExamPaperServlet">Archive</a>
-            </li>
-            <li>
-                <a href="about.jsp">About</a>
-            </li>
-            <li>
-                <a href="contact.jsp">Contact Us</a>
-            </li>
-        </ul>
-    </div>
-    <!-- /#sidebar-wrapper -->
+                <li>
+                    <a href="ListExamPaperServlet">Archive</a>
+                </li>
+                <li>
+                    <a href="about.jsp">About</a>
+                </li>
+                <li>
+                    <a href="contact.jsp">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
         <%
         List<SelectComment> comments = (List<SelectComment>) request.getAttribute("comments_list");
         User u  = (User) session.getAttribute("user");
         String exam_paper_id = (String) request.getAttribute("exam_paper_id");
-    %>
+        %>
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"></i></a>
-            <h1>Comment History</h1>
-            <hr>
-            <a href="LogoutServlet" class="btn btn-danger" style="float: right;">Logout</a>
-            <div style="clear: both;"></div>
-            <hr>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <a href="#menu-toggle" class="btn btn-primary" id="menu-toggle"><i class="fas fa-bars"></i></a>
+                <h1>Comment History</h1>
+                <hr>
+                <a href="LogoutServlet" class="btn btn-danger" style="float: right;">Logout</a>
+                <div style="clear: both;"></div>
+                <hr>
 
-            <div class="table-fixed">
-                <table class="table table-bordered table-hover table-striped table table-fixed">
-                    <thead>
-                    <tr>
-                        <th scope="col">Comments ID</th>
-                        <th scope="col">Uploader</th>
-                        <th scope="col">Comment(s)</th>
+                <div class="table-fixed">
+                    <table class="table table-bordered table-hover table-striped table table-fixed">
+                        <thead>
+                            <tr>
+                                <th scope="col">Comments ID</th>
+                                <th scope="col">Uploader</th>
+                                <th scope="col">Comment(s)</th>
 
-                    </tr>
-                    </thead>
-                    <tbody>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                    <%
-                        int i = 0;
-                        for (SelectComment comment : comments) {
-                    %>
-                    <tr>
-                        <td><%=++i%>
-                        </td>
-                        <td><%=comment.getUser_id()%>
-                        </td>
-                        <td><%=comment.getComments()%>
-                        </td>
-                        <td style="text-align: center;">
-                            <a class="btn btn-primary"
-                               href="DownloadCommentFileServlet?versionId=<%=comment.getVersion_id()%>&exampaperId=<%=exam_paper_id%>">download</a>
-                        </td>
-                    </tr>
+                            <%
+                            int i = 0;
+                            for (SelectComment comment : comments) {
+                            %>
+                            <tr>
+                                <td><%=++i%>
+                                </td>
+                                <td><%=comment.getUser_id()%>
+                                </td>
+                                <td><%=comment.getComments()%>
+                                </td>
+                                <td style="text-align: center;">
+                                    <a class="btn btn-primary"
+                                    href="DownloadCommentFileServlet?versionId=<%=comment.getVersion_id()%>&exampaperId=<%=exam_paper_id%>">download</a>
+                                </td>
+                            </tr>
 
-                    <%
+                            <%
                         }
-                    %>
+                        %>
                     </tbody>
                 </table>
             </div>
@@ -121,41 +121,41 @@
             <br>
             <label>Add comments with this upload (required):</label>
             <textarea name="comment" class="form-control" rows="5"
-                      style="margin-left: auto; margin-right: auto; width: 100%;"
-                      placeholder="Please input your comments..."></textarea>
+            style="margin-left: auto; margin-right: auto; width: 100%;"
+            placeholder="Please input your comments..."></textarea>
             <br>
             <%
-                int sign = (int) request.getAttribute("sign");
-                if (sign == Category.NOTSIGN) {
+            int sign = (int) request.getAttribute("sign");
+            if (sign == Category.NOTSIGN) {
             %>
             <a class="btn btn-warning" href="SignServlet?examPaperId=<%=exam_paper_id%>">Sign</a>
             <%
-            } else {
-            %>
+        } else {
+        %>
 
-            <a class="btn btn-warning disabled" href="#">Sign</a>
-            <%
-                }
-            %>
+        <a class="btn btn-warning disabled" href="#">Sign</a>
+        <%
+    }
+    %>
 
-            <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
-        </form>
-        <br>
-        <br>
-    </div>
+    <input type="submit" class="btn btn-success" value="submit" style="float: right;"/>
+</form>
+<br>
+<br>
+</div>
 
 
-    <!-- /#page-content-wrapper -->
-    <!--scripts-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
-    <!--/scripts-->
+<!-- /#page-content-wrapper -->
+<!--scripts-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<!--/scripts-->
 
 
 </body>

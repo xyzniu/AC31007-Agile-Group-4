@@ -46,16 +46,16 @@ To change this template use File | Settings | File Templates.
                 <%
                 String msg = (String) request.getAttribute("errorMsg");
                 if (msg != null && msg.length() > 0) {
-                    %>
-                    <p><%=msg%>
-                    </p>
-                    <%
-                    request.removeAttribute("errorMsg");
-                }
                 %>
-                <input class="btn btn-primary" type="submit" value="login"/>
-            </form>
-        </div>
+                <p><%=msg%>
+                </p>
+                <%
+                request.removeAttribute("errorMsg");
+            }
+            %>
+            <input class="btn btn-primary" type="submit" value="login"/>
+        </form>
     </div>
+</div>
 </body>
 </html>
