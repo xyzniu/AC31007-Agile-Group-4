@@ -106,12 +106,6 @@ public class LinkDao {
         return rst;
     }
 
-    /**
-     * get one result from the table
-     * @param type
-     * @param examPaperId
-     * @return
-     */
     public boolean selectInOneType(int type, int examPaperId) {
         Connection connection = null;
         PreparedStatement ps = null;

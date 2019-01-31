@@ -1,6 +1,14 @@
 <component name="ArtifactManager">
+<<<<<<< HEAD
   <artifact type="exploded-war" name="webserver_war">
     <output-path>$PROJECT_DIR$/out/artifacts/webserver_war</output-path>
     <root id="root" />
+=======
+  <artifact type="war" name="webserver:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/webserver_war</output-path>
+    <root id="archive" name="webserver_war.war">
+      <element id="artifact" artifact-name="webserver:war exploded" />
+    </root>
+>>>>>>> parent of 0484989... cc
   </artifact>
 </component>
