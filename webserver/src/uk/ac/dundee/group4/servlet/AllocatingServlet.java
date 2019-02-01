@@ -15,11 +15,21 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
 
+/**
+ * This class contains logical part for allocating users for exam papers.
+ */
 @WebServlet(name = "AllocatingServlet")
 public class AllocatingServlet extends HttpServlet {
     UserService userService = new UserService();
     ExamPaperService examPaperService = new ExamPaperService();
 
+    /**
+     * Get list of user id for each role
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String[] internalModerators = request.getParameterValues(Category.INTERNAL_MODERATOR);
         String[] committeeMembers = request.getParameterValues(Category.EXAM_VETTING_COMMITTEE);
@@ -27,6 +37,7 @@ public class AllocatingServlet extends HttpServlet {
         String examPaperId = request.getParameter("examPaperId");
         int examPaper = Integer.parseInt(examPaperId);
 
+        // insert links
         int rst = userService.insertLink(internalModerators, committeeMembers, externalModerators, examPaper);
         if (rst < 0) {
             response.sendRedirect("ListExamPaperServlet");
@@ -35,6 +46,13 @@ public class AllocatingServlet extends HttpServlet {
         }
     }
 
+    /**
+     * get links for a exam paper id
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String examPaperId = request.getParameter("examPaperId");
         if (examPaperId == null || examPaperId.length() <= 0) {

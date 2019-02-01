@@ -28,8 +28,10 @@ public class SelectCommentDao {
 
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db", "18agileteam4", "7632.at4.2367");
+            // select comments
             sql = "Select * from comments where exam_paper_id = ?";
             ps = conn.prepareStatement(sql);
             ps.setString(1, exam_paper_id);
@@ -47,7 +49,6 @@ public class SelectCommentDao {
 
                 // get user name by querying different tables
                 // store user name in c.user_id()
-                // TODO: 2019-01-24 may lead a problem
                 switch (c.getStaff_type()) {
                     case Category.EXAM_SETTER:
                         sql = "SELECT * FROM exam_setter WHERE exam_setter_ID=?";
@@ -80,7 +81,7 @@ public class SelectCommentDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-
+            // close resources
             try {
                 ps.close();
             } catch (SQLException e) {

@@ -103,7 +103,6 @@ public class AddExamPaperServlet extends HttpServlet {
         int versionId = versionService.insertOne(v);
         if (versionId > 0) {
             // insert version successfully
-            // TODO: 2019-01-24  need to add transactions in database, rollback when something go wrong
             examPaper.setLatestVersion(versionId);
             // insert exampaper
             int examPaperId = examPaperService.insertExamPaper(examPaper);

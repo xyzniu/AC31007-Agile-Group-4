@@ -19,8 +19,9 @@ import java.util.List;
 public class ListExamPaperServlet extends HttpServlet {
     ExamPaperService examPaperService = new ExamPaperService();
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doGet(request, response);
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req, resp);
     }
 
     /**

@@ -1,5 +1,7 @@
 package uk.ac.dundee.group4.dao;
 
+import uk.ac.dundee.group4.util.DBInfo;
+
 import java.sql.*;
 import java.util.List;
 
@@ -21,19 +23,20 @@ public class InsertCommentDao {
      * @param version_id
      * @return
      */
-    public int InsertComment(String comment, String exam_paper_id, String user_id, String staff_type,int version_id) {
+    public int InsertComment(String comment, String exam_paper_id, String user_id, String staff_type, int version_id) {
 
         Connection conn = null;
         PreparedStatement ps = null;
         int rst = -1;
 
-
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://silva.computing.dundee.ac.uk:3306/18agileteam4db", "18agileteam4", "7632.at4.2367");
-            //String sql = "INSERT INTO comments(comment_id, comment) VALUES ("+comment_id+","+comment+")";
+            conn = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            // insert new comments
             String sql = "insert INTO comments (comment_id, comment,user_ID,exam_paper_id, staff_type, version_ID) value ( default ,?,?,?,?,?)";
             ps = conn.prepareStatement(sql);
+            // set values
             ps.setString(1, comment);
             ps.setString(2, user_id);
             ps.setString(3, exam_paper_id);
@@ -45,7 +48,7 @@ public class InsertCommentDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-
+            // close resources
             try {
                 ps.close();
             } catch (SQLException e) {

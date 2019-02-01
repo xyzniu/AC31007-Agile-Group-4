@@ -13,14 +13,21 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
+/**
+ * This is a servlet for sign function
+ */
 @WebServlet(name = "SignServlet")
 public class SignServlet extends HttpServlet {
     LinkService linkService = new LinkService();
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
+    /**
+     * sign a paper, change stage
+     *
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         User u = (User) session.getAttribute("user");
@@ -31,7 +38,5 @@ public class SignServlet extends HttpServlet {
         linkService.insertSign(u, examPaperId);
 
         request.getRequestDispatcher("SelectCommentServlet?exam_paper_id=" + examPaperIdStr).forward(request, response);
-
-
     }
 }

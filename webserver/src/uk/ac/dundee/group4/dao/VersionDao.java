@@ -1,6 +1,5 @@
 package uk.ac.dundee.group4.dao;
 
-import uk.ac.dundee.group4.pojo.CommentFile;
 import uk.ac.dundee.group4.pojo.Version;
 import uk.ac.dundee.group4.util.DBInfo;
 
@@ -24,10 +23,13 @@ public class VersionDao {
         int rst = -1;
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            // insert one version
             String sql = "INSERT INTO version VALUES(default, ?,?,?,?)";
             ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            // set values
             ps.setTimestamp(1, version.getTimestamp());
             ps.setString(2, version.getUrl());
             ps.setInt(3, version.getExamPaperId());
@@ -35,6 +37,7 @@ public class VersionDao {
             ps.executeUpdate();
             resultSet = ps.getGeneratedKeys();
             while (resultSet.next()) {
+                // return generated keys
                 rst = resultSet.getInt(1);
             }
         } catch (ClassNotFoundException e) {
@@ -42,6 +45,7 @@ public class VersionDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             try {
                 if (resultSet != null) {
                     resultSet.close();
@@ -68,6 +72,7 @@ public class VersionDao {
 
     /**
      * update exampaper id in version table
+     *
      * @param versionId
      * @param examPaperId
      * @return
@@ -78,8 +83,10 @@ public class VersionDao {
         int rst = -1;
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            // update the version id
             String sql = "UPDATE version SET exam_paper_ID=? WHERE version_ID=?";
             ps = connection.prepareStatement(sql);
             ps.setInt(1, examPaperId);
@@ -90,6 +97,7 @@ public class VersionDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             try {
                 ps.close();
             } catch (SQLException e) {
@@ -103,6 +111,12 @@ public class VersionDao {
         }
         return rst;
     }
+
+    /**
+     * select url by version id
+     * @param versionId
+     * @return
+     */
     public String selectUrlbyVersionId(int versionId) {
         Connection connection = null;
         PreparedStatement ps = null;
@@ -110,13 +124,16 @@ public class VersionDao {
         String ResultUrl = null;
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            // select from version
             String sql = "Select * from version where version_ID=?";
             ps = connection.prepareStatement(sql);
             ps.setInt(1, versionId);
             rs = ps.executeQuery();
             while (rs.next()) {
+                // get version url
                 ResultUrl = rs.getString("version_URL");
             }
         } catch (ClassNotFoundException e) {
@@ -124,7 +141,8 @@ public class VersionDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            if (rs!=null){
+            // close resources
+            if (rs != null) {
                 try {
                     rs.close();
                 } catch (SQLException e) {

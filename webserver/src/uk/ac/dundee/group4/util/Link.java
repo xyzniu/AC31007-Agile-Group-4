@@ -2,6 +2,9 @@ package uk.ac.dundee.group4.util;
 
 import uk.ac.dundee.group4.pojo.User;
 
+/**
+ * To change links represented by String to represent by integers
+ */
 public class Link {
 
     public static int getLink(User u) {

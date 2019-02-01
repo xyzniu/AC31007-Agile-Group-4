@@ -33,6 +33,15 @@ public class UserService {
         return userDao.selectStaff();
     }
 
+    /**
+     * insert links
+     *
+     * @param internalModerators
+     * @param committeeMembers
+     * @param externalModerators
+     * @param examPaperId
+     * @return
+     */
     public int insertLink(String[] internalModerators, String[] committeeMembers, String[] externalModerators, int examPaperId) {
         List<Integer> list1 = new ArrayList<>();
         for (int i = 0; i < internalModerators.length; i++) {

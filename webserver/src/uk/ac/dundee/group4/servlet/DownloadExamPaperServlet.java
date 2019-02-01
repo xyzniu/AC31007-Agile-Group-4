@@ -28,7 +28,7 @@ public class DownloadExamPaperServlet extends HttpServlet {
      * @throws IOException
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String versionId = request.getParameter("versionId");
+        String versionId = request.getParameter("examPaperId");
         if (versionId == null || versionId.length() <= 0) {
             return;
         } else {

@@ -29,9 +29,11 @@ public class UserDao {
         User u = null;
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
             String sql = null;
+            // select table by staff type
             if (type.equals(Category.EXAM_SETTER)) {
                 sql = "SELECT * FROM exam_setter WHERE username=? AND password=?";
             } else if (type.equals(Category.INTERNAL_MODERATOR)) {
@@ -50,6 +52,7 @@ public class UserDao {
             ps.setString(2, password);
             rs = ps.executeQuery();
             while (rs.next()) {
+                // wrap object
                 u = new User();
                 u.setId(rs.getInt(1));
                 u.setFirstName(rs.getString("first_name"));
@@ -66,6 +69,7 @@ public class UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             try {
                 if (rs != null) {
                     rs.close();
@@ -84,7 +88,7 @@ public class UserDao {
                 e.printStackTrace();
             }
         }
-        return null;
+        return u;
     }
 
     /**
@@ -99,16 +103,20 @@ public class UserDao {
         List<List<User>> lists = new LinkedList<>();
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
-            String[] sql = new String[3];
+            // create 3 sql for different table
             String sql1 = "SELECT * FROM internal_moderator";
             String sql2 = "SELECT * FROM committee_member";
             String sql3 = "SELECT * FROM external_examiner";
+
+            // internal moderator
             ps = connection.prepareStatement(sql1);
             rs = ps.executeQuery();
             List<User> list1 = new ArrayList<>();
             while (rs.next()) {
+                // wrap object
                 User u = new User();
                 u.setId(rs.getInt("internal_moderator_ID"));
                 u.setFirstName(rs.getString("first_name"));
@@ -122,10 +130,12 @@ public class UserDao {
             }
             lists.add(list1);
 
+            // committee member
             ps = connection.prepareStatement(sql2);
             rs = ps.executeQuery();
             List<User> list2 = new ArrayList<>();
             while (rs.next()) {
+                // wrap object
                 User u = new User();
                 u.setId(rs.getInt("commitee_member_id"));
                 u.setFirstName(rs.getString("first_name"));
@@ -139,10 +149,12 @@ public class UserDao {
             }
             lists.add(list2);
 
+            //external examiner
             ps = connection.prepareStatement(sql3);
             rs = ps.executeQuery();
             List<User> list3 = new ArrayList<>();
             while (rs.next()) {
+                // wrap object
                 User u = new User();
                 u.setId(rs.getInt("external_examiner_id"));
                 u.setFirstName(rs.getString("first_name"));
@@ -161,6 +173,7 @@ public class UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             if (rs != null) {
                 try {
                     rs.close();
@@ -168,7 +181,6 @@ public class UserDao {
                     e.printStackTrace();
                 }
             }
-
             try {
                 ps.close();
             } catch (SQLException e) {
@@ -185,6 +197,9 @@ public class UserDao {
     }
 
     /**
+     *
+     * insert links to link_table
+     *
      * @param internalModerators
      * @param committeeMembers
      * @param externalModerators
@@ -197,13 +212,16 @@ public class UserDao {
         int rst = -1;
 
         try {
+            // get connections
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            // first delete all links belongs to exam paper id
             String sql0 = "DELETE FROM link_table WHERE exam_paper_ID=?";
             ps = connection.prepareStatement(sql0);
             ps.setInt(1, examPaperId);
             ps.executeUpdate();
 
+            // insert into link table
             String sql = "INSERT INTO link_table VALUES(default,?,?,?,?)";
             ps = connection.prepareStatement(sql);
             for (int i = 0; i < internalModerators.size(); i++) {
@@ -232,6 +250,7 @@ public class UserDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             try {
                 ps.close();
             } catch (SQLException e) {

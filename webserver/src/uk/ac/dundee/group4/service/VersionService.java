@@ -24,6 +24,7 @@ public class VersionService {
 
     /**
      * update exampaper by version id and exam paper id
+     *
      * @param versionId
      * @param examPaperId
      * @return
@@ -32,6 +33,12 @@ public class VersionService {
         return versionDao.updateExamPaperId(versionId, examPaperId);
     }
 
+    /**
+     * select url by version id
+     *
+     * @param versionId
+     * @return
+     */
     public String selectUrlbyVersionId(int versionId) {
         return versionDao.selectUrlbyVersionId(versionId);
     }

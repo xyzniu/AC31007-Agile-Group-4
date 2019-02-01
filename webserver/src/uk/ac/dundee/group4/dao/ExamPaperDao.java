@@ -27,16 +27,21 @@ public class ExamPaperDao {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
+        // examPaper list
         List<ExamPaper> examPapers = new ArrayList<>();
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+
+            // select exam paper by exam setter id
             String sql = "SELECT * FROM exam_paper WHERE exam_setter_ID=?";
             ps = conn.prepareStatement(sql);
             ps.setInt(1, examSetterId);
             rs = ps.executeQuery();
             while (rs.next()) {
+                // wrap object
                 ExamPaper examPaper = new ExamPaper();
                 examPaper.setId(rs.getInt("exam_paper_ID"));
                 examPaper.setModuleCode(rs.getString("module_code"));
@@ -54,6 +59,7 @@ public class ExamPaperDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             try {
                 if (rs != null) {
                     rs.close();
@@ -88,10 +94,14 @@ public class ExamPaperDao {
         int rst = -1;
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+
+            // insert a new exam paper
             String sql = "INSERT INTO exam_paper VALUES (default, ?,?,?,?,?,?,?,?,?)";
             ps = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            // set values
             ps.setString(1, examPaper.getModuleCode());
             ps.setInt(2, examPaper.getExamSetterId());
             ps.setInt(3, examPaper.getFormat());
@@ -114,6 +124,7 @@ public class ExamPaperDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             if (rs != null) {
                 try {
                     rs.close();
@@ -147,15 +158,21 @@ public class ExamPaperDao {
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
+        // wrap new version
         Version v = new Version();
+
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+
+            // get the latest version
             String sql = "SELECT * FROM exam_paper e, version v WHERE e.exam_paper_ID=v.exam_paper_ID AND e.exam_paper_ID=? AND v.version_ID=e.latest_version_ID";
             ps = connection.prepareStatement(sql);
             ps.setInt(1, examPaperId);
             rs = ps.executeQuery();
             while (rs.next()) {
+                // wrap object
                 v.setId(rs.getInt("version_ID"));
                 v.setTimestamp(rs.getTimestamp("timestamp"));
                 v.setUrl(rs.getString("version_URL"));
@@ -168,6 +185,7 @@ public class ExamPaperDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             try {
                 if (rs != null) {
                     rs.close();
@@ -202,12 +220,16 @@ public class ExamPaperDao {
         List<ExamPaper> examPapers = new ArrayList<>();
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+
+            // get all exam papers belongs to one exam setter
             String sql = "SELECT * FROM exam_paper ep, exam_setter es WHERE ep.exam_setter_ID=es.exam_setter_ID";
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
+                // wrap object
                 ExamPaper examPaper = new ExamPaper();
                 examPaper.setId(rs.getInt("exam_paper_ID"));
                 examPaper.setModuleCode(rs.getString("module_code"));
@@ -228,6 +250,7 @@ public class ExamPaperDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             try {
                 if (rs != null) {
                     rs.close();
@@ -260,16 +283,22 @@ public class ExamPaperDao {
         Connection connection = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
+        // exam papers list
         List<ExamPaper> examPapers = new ArrayList<>();
+
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+
+            // get exam papers belongs to a staff
             String sql = "SELECT * FROM link_table l, exam_paper ep, exam_setter es WHERE l.link_control=? AND l.staff_ID=? AND ep.exam_paper_ID=l.exam_paper_ID AND ep.exam_setter_ID=es.exam_setter_ID";
             ps = connection.prepareStatement(sql);
             ps.setInt(1, type);
             ps.setInt(2, id);
             rs = ps.executeQuery();
             while (rs.next()) {
+                // wrap object
                 ExamPaper examPaper = new ExamPaper();
                 examPaper.setId(rs.getInt("exam_paper_ID"));
                 examPaper.setModuleCode(rs.getString("module_code"));
@@ -290,6 +319,7 @@ public class ExamPaperDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             try {
                 if (rs != null) {
                     rs.close();
@@ -323,17 +353,27 @@ public class ExamPaperDao {
         PreparedStatement ps = null;
         ResultSet rs = null;
         List<HashSet<Integer>> lists = new ArrayList<>();
+
+        // create 4 hash set
+        // lists(1): staff type is internal moderator
+        // lists(2): staff type is committe member
+        // lists(3): staff type is external moderator
         for (int i = 0; i < 4; i++) {
             lists.add(new HashSet<Integer>());
         }
+
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+
+            // get all the staff from link table
             String sql = "SELECT * FROM link_table WHERE exam_paper_ID = ?";
             ps = connection.prepareStatement(sql);
             ps.setInt(1, id);
             rs = ps.executeQuery();
             while (rs.next()) {
+                // add them to hashset by link_control
                 switch (rs.getInt("link_control")) {
                     case 1:
                         lists.get(1).add(rs.getInt("staff_ID"));
@@ -351,6 +391,7 @@ public class ExamPaperDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             if (rs != null) {
                 try {
                     rs.close();
@@ -372,6 +413,11 @@ public class ExamPaperDao {
         return lists;
     }
 
+    /**
+     * select exampapers that stage = -1 or stage = 0
+     *
+     * @return
+     */
     public List<ExamPaper> selectToAllocate() {
         Connection connection = null;
         PreparedStatement ps = null;
@@ -379,12 +425,15 @@ public class ExamPaperDao {
         List<ExamPaper> list = new ArrayList<>();
 
         try {
+            // get connection
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            // select exampapers that stage = -1 or stage = 0
             String sql = "SELECT * FROM exam_paper WHERE stage='-1' OR stage='0'";
             ps = connection.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
+                // wrap object
                 ExamPaper examPaper = new ExamPaper();
                 examPaper.setId(rs.getInt("exam_paper_ID"));
                 examPaper.setModuleCode(rs.getString("module_code"));
@@ -403,6 +452,7 @@ public class ExamPaperDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
+            // close resources
             if (rs != null) {
                 try {
                     rs.close();
@@ -424,7 +474,45 @@ public class ExamPaperDao {
         return list;
     }
 
-    public void changeStage(int type) {
+    /**
+     * change the stage after signing
+     *
+     * @param type
+     * @param examPaperId
+     * @return
+     */
+    public int changeStage(int type, int examPaperId) {
+        Connection connection = null;
+        PreparedStatement ps = null;
+        int rst = -1;
 
+        try {
+            // get connection
+            Class.forName("com.mysql.jdbc.Driver");
+            connection = DriverManager.getConnection(DBInfo.url, DBInfo.name, DBInfo.password);
+            // update to next stage by exam paper id
+            String sql = "UPDATE exam_paper SET stage = ? WHERE exam_paper_id=?";
+            ps = connection.prepareStatement(sql);
+            ps.setInt(1, type);
+            ps.setInt(2, examPaperId);
+            rst = ps.executeUpdate();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            // close resources
+            try {
+                ps.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return rst;
     }
 }

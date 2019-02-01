@@ -13,14 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * This is a servlet for allocating
+ */
 @WebServlet(name = "ShowAllocateServlet")
 public class ShowAllocateServlet extends HttpServlet {
     ExamPaperService examPaperService = new ExamPaperService();
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-    }
-
+    // show the exampapers that need to be allocated
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<ExamPaper> examPaperList = examPaperService.selectToAllocate();
         request.setAttribute("examPapers", examPaperList);

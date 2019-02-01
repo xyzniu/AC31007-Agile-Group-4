@@ -9,7 +9,6 @@ public class InsertCommentService {
 
     private InsertCommentDao insertCommentDao = new InsertCommentDao();
 
-
     /**
      * insert comments
      *

@@ -72,16 +72,20 @@ public class ExamPaperService {
     }
 
     /**
-     * querying url by exam paper id
+     * select exampapers that have not been allocated
      *
-     * @param examPaperId
      * @return
      */
-
     public List<ExamPaper> selectToAllocate() {
         return dao.selectToAllocate();
     }
 
+    /**
+     * return links
+     *
+     * @param id
+     * @return
+     */
     public List<HashSet<Integer>> selectLinkByExamPaperID(int id) {
         return dao.selectLinkByExamPaperID(id);
     }

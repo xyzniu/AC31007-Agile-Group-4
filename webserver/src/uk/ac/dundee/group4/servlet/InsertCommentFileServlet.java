@@ -24,10 +24,20 @@ import java.io.InputStream;
 import java.sql.Timestamp;
 import java.util.List;
 
+/**
+ * Insert comments and files
+ */
 public class InsertCommentFileServlet extends HttpServlet {
     VersionService versionService = new VersionService();
     InsertCommentService insertCommentService = new InsertCommentService();
 
+    /**
+     * get files from request, and store them
+     * @param request
+     * @param response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ExamPaper examPaper = new ExamPaper();
         String path = "";
@@ -104,6 +114,12 @@ public class InsertCommentFileServlet extends HttpServlet {
 
     }
 
+    /**
+     * store file
+     * @param item
+     * @return
+     * @throws IOException
+     */
     private String storeItem(FileItem item) throws IOException {
         String savePath = this.getServletContext().getRealPath("/WEB-INF/upload");
         File file = new File(savePath);
