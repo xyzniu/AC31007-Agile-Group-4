@@ -8,16 +8,13 @@ import uk.ac.dundee.group4.util.Category;
 import java.util.List;
 
 /**
- * This is a test class for CommentDao
+ * This is a test class for SelectCommentDao
  */
 public class CommentDaoTest {
 
-    @Test
-    public void insertCommentTest() {
-        InsertCommentDao insertCommentDao = new InsertCommentDao();
-        // insertCommentDao.InsertComment("comment", "1", "1", Category.EXAM_SETTER);
-    }
-
+    /**
+     * test for selectCommentDao
+     */
     @Test
     public void selectCommentTest() {
         SelectCommentDao selectCommentDao = new SelectCommentDao();
